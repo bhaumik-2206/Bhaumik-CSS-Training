@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Class-Selector</title>
+    <style>
+        .div1,.div2{
+            border: 2px solid red;
+        }
+
+        /* --------First-Child------------- */
+        /* div.main p:first-child{
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------Last-Child------------- */
+        /* div.main p:last-child{
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------First-Of-Type------------- */
+        /* div.main p:first-of-type{
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------Last-Of-Type------------- */
+        /* div.main p:last-of-type{
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------nth-Child------------- */
+        /* div.main p:nth-child(2){
+            color: red;
+            background-color: yellow;
+        } */
+        /* div.main p:nth-child(3){
+            color: red;
+            background-color: yellow;
+        } */
+        /* div.main p:nth-child(5){
+            color: red;
+            background-color: yellow;
+        } */
+        /* div.main p:nth-child(even){
+            color: red;
+            background-color: yellow;
+        } */
+        /* div.main p:nth-child(odd){
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------nth-Last-Child------------- */
+        /* div.main p:nth-last-child(even){
+            color: red;
+            background-color: yellow;
+        } */
+        /* div.main p:nth-last-child(odd){
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------nth-Of-Type------------- */
+        /* div.div1 :nth-of-type(1){
+            color: red;
+            background-color: yellow;
+        } */
+        /* div.main p:nth-of-type(even){
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------nth-Last-Of-Type------------- */
+        /* div.main p:nth-last-of-type(odd){
+            color: red;
+            background-color: yellow;
+        } */
+
+        
+        /* --------Only-Of-Type------------- */
+        /* div.main :only-of-type{
+            color: red;
+            background-color: yellow;
+        } */
+
+
+        /* --------Only-Child------------- */
+        /* div.main :only-child{
+            color: red;
+            background-color: yellow;
+        } */
+
+
+        /* --------Empty------------- */
+        /* div.main :empty{
+            height: 20px;
+            width: 300px;
+            color: yellow;
+            background-color: red;
+        } */
+
+        
+        /* --------not------------- */
+        /* div.div1 :not(p){
+            color: red;
+            background-color: yellow;
+        } */
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="div1">
+            <h2>This is Heading</h2>
+            <p>This is Paragraph-1 od div1</p>
+            <p>This is Paragraph-2 od div1</p>
+            <p>This is Paragraph-3 od div1</p>
+            <p>This is Paragraph-4 od div1</p>
+            <p></p>
+        </div>
+        <p>This is Paragraph-1 of main</p>
+        <p>This is Paragraph-2 of main</p>
+        <div class="div2">
+            <p>This is Paragraph-1 of div2</p>
+            <p>This is Paragraph-2 of div2</p>
+            <p>This is Paragraph-3 of div2</p>
+        </div>
+        <div class="div3">
+            <p>This is Paragraph-1 of div3</p>
+        </div>
+    </div>
+</body>
+</html>

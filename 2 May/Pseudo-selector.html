@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Selector</title>
+    <style>
+        *{
+            font-size: 25px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 60px;
+            margin-top: 0;
+        }
+
+        .hover:hover {
+            color: rgb(0, 21, 255);
+            background-color: rgb(196, 248, 255);
+            font-size: 30px;
+        }
+
+        a:link{
+            color: rgb(255, 149, 149);
+            background-color: aqua;
+            padding: 10px 20px;
+        }
+        a:visited{
+            color: aqua;
+            background-color: black;
+            padding: 10px 20px;
+        }
+        a:hover{
+            color: blue;
+            background-color: rgb(0, 200, 255);
+            padding: 10px 20px;
+        }
+        a:active{
+            color: rgb(255, 0, 0);
+            background-color: rgb(255, 100, 100);
+            padding: 10px 20px;
+        }
+        span:first-child{
+            color: brown;
+        }
+
+        .first-line::first-line{
+            color: red;
+        }
+        .first-letter::first-letter{
+            color: red;
+            font-size: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .before::before{
+            content: "Content add before element ";
+            color: red;
+        }
+        .after::after{
+            content: " Content add after element";
+            color: red;
+        }
+        ul li::marker{
+            color: blue;
+        }
+        .selection::selection{
+            color: aqua;
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo-Selector</h1>
+    <div class="first">
+        <h2>Pseudo-Class</h2>
+        <p class="hover">Hover me!</p><hr>
+        <a href="https://google.com">Google link</a><br><hr>
+        <div>
+            <span>First</span><br>
+            <span>Second</span><br>
+            <span>Third</span><br>
+        </div><hr>
+    </div>
+
+    <div class="second">
+        <h2>Pseudo-Element</h2>
+        <p class="first-line">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi blanditiis repellendus excepturi veniam sit voluptatem ipsa perferendis iure reiciendis magnam unde Lorem ipsum dolor sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, quaerat!</p>
+        <p class="first-letter">Hello</p>
+        <p class="before">This is Before</p>
+        <p class="after">This is After</p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+        <p class="selection">Select Me!</p>
+    </div>
+</body>
+
+</html>
+<!-- order
+link,visited,hover,active all are mendatory
+
+div>p
+div+p 
+div~p 
+empty pseudo 
+.z.z
+nth chlid... 
+important
+pseudo selector
+display
+css box model
+spacing property
+border opacity visibality
+
+-->

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        *{
+            font-size: 25px;
+        }
+        h1{
+            color: brown;
+            text-align: center;
+            font-size: 50px;
+        }
+        .demo{
+            color: red;
+        }
+        .one{
+            color: aqua;
+        }
+        #two{
+            color: blue;
+        }
+        .demo1{
+            color: cadetblue;
+        }
+        p{
+            color: green;
+        }
+        .hello{
+            color: rgb(148, 255, 148);
+        }
+        .div p{
+            color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Specificity</h1>
+    <p class="demo" style="color: blueviolet;">Run Inline CSS (I also give color red in this tag using class but Inline CSS has most specificity.inline is override on class.)</p>
+    <p class="one" id="two">Run ID (I am also give aqua color using class in this tag but id has more priority then class so id is override on class.)</p>
+    <p class="demo1">Run Class (I am also give green color in element but class has more specificity then element so class css is working and class css is override on element css.)</p>
+    <div class="div">
+        <p class="hello">Run Element (Element has leat specificity but I am add css to element by div class(.div) so class hello has 10 specificity and div class element has 11 soecificity so this time this css is working.)</p>
+    </div>
+</body>
+</html>

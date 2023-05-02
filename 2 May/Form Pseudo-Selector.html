@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pseudo-Class-Selector</title>
+    <style>
+        *{
+            text-align: center;
+            background-color: rgb(65, 255, 173);
+            font-size: 24px;
+        }
+        h1{
+            font-size: 40px;
+            color: rgb(0, 170, 255);
+        }
+        input,button{
+            background-color: white;
+        }
+        
+
+        /* --------Focus---------- */
+        input:focus{
+            border: 5px solid green;
+            color: white;
+            background-color: rgb(42, 48, 165);
+        }
+
+        /* --------checked---------- */
+        input:checked{
+            height: 20px;
+            width: 20px;
+        }
+        
+        /* --------disabled and enabled---------- */
+        /* input:disabled{
+            color: red;
+            background-color: yellow;
+        } */
+        /* input:enabled{
+            color: rgb(115, 255, 120);
+            background-color: rgb(0, 255, 55);
+        } */
+
+        /* --------required and optionl---------- */
+        /* input:required{
+            border: 10px solid green;
+        } */
+        /* input:optional{
+            border: 10px solid green;
+            color: aqua;
+            background-color: black;
+        } */
+
+        
+        /* --------required and optionl---------- */
+        /* input:in-range{
+            color: blue;
+        } */
+        /* input:out-of-range{
+            color: red;
+        } */
+
+        
+        /* --------valid and invalid---------- */
+        /* input:valid{
+            color: cyan;
+            background-color: rgb(0, 84, 56);
+        } */
+        /* input:invalid{
+            color: cyan;
+            background-color: rgb(0, 84, 56);
+        } */
+
+    </style>
+</head>
+<body>
+    <h1>Registration Form:-</h1><br>
+    
+    <form action="">
+        <label for="fname">First Name:-</label>
+        <input type="text" id="fname" required><br><br>
+        <label for="mname">Middle Name:-</label>
+        <input type="text" id="mname" value="This is disabled" disabled><br><br>
+        <label for="lname">Last Name:-</label>
+        <input type="text" id="lname"><br><br>
+
+        <label for="email">E-mail:-</label>
+        <input type="email" id="email"><br><br>
+
+        <label for="age">Age:-</label>
+        <input type="number" name="age" id="age" min="18" max="40"><br><br>
+
+        <label for="Geder">Geder:-</label>
+        <input type="radio" name="male" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="male" id="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="Hobbies">Hobbies:-</label>
+        <input type="checkbox" name="hobbies" id="cricket">
+        <label for="cricket">Cricket</label>
+        <input type="checkbox" name="hobbies" id="Football">
+        <label for="Football">Football</label><br>&emsp;&emsp;&emsp;&emsp;
+        <input type="checkbox" name="hobbies" id="Coding">
+        <label for="Coding">Coding</label>
+        <input type="checkbox" name="hobbies" id="Drawing">
+        <label for="Drawing">Drawing</label><br><br>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+</html>
