@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility</title>
+    <style>
+        body{
+            background-color: rgb(166, 255, 147);
+        }
+        tr.collapse{
+            visibility: collapse;
+        }
+        .hidden{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <table border="1px solid black">
+        <tr>
+            <td>Bhumik</td>
+            <td>Raj</td>
+        </tr>
+        <tr class="collapse">
+            <td>Sachin</td>
+            <td>Jay</td>
+        </tr>
+    </table>
+
+    <h1>The Hidden Value is Take up some space.</h1>
+    <h3>This is heading-1</h3>
+    <h3 class="hidden">This is heading-2</h3>
+    <h3>This is heading-3</h3>
+</body>
+</html> 
