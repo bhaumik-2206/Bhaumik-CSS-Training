@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Answers</title>
+    <style>
+        body{
+            background-color: aquamarine;
+        }
+        hr{
+            background-color: red;
+            height: 5px;
+        }
+        html{
+            font-size: 10px;
+        }
+        p{
+            font-size: 3rem;
+        }
+        .main{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-left: auto;
+        }
+        .next{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            opacity: 50%;
+        }
+        .third{
+            background-color: rgb(255, 118, 118);
+            max-width: 1200px;
+            width: 1000px;
+            min-width: 600px;
+        }
+
+        .marginblock{
+            border: 3px solid red;
+        }
+        .marginblock h1{
+            border: 1px solid green;
+            margin-block: 40px;
+        }
+        .margininline{
+            border: 3px solid red;
+        }
+        .margininline h1{
+            border: 1px solid green;
+            margin-inline: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2 style="font-size: 3rem;">Right div.</h2>
+    <div class="main"></div>
+
+    <hr>
+
+    <p>Size is 3rem and html size is 10px so my size is 3×10=30px.</p>
+    
+    <hr>
+
+    <h2 style="font-size: 3rem;">Yes, we are set opacity in Percentage.
+    <br>Opacity:50%:-</h2>
+    <div class="next"></div>
+
+    <hr>
+
+    <div class="third">
+        <p>Order is not-matter in min-max-width.<br>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto officia illum deleniti perspiciatis omnis iure obcaecati optio sint maiores, assumenda placeat impedit distinctio nemo. Repudiandae exercitationem ut porro enim reprehenderit
+        </p>
+    </div>
+
+    <hr>
+    
+    <div class="marginblock">
+        <h1>Margin-block is specify margin in block direction. This is similar as margin-top and margin-bottom.</h1>
+    </div>
+    <br>
+    <div class="margininline">
+        <h1>Margin-inline is specify margin in inline direction. This is similar as margin-left and margin-right.</h1>
+    </div>
+</body>
+</html>
