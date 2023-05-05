@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        body {
+            background-color: rgb(142, 142, 142);
+        }
+
+        .container>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px;
+        }
+
+        .header {
+            height: 100px;
+            background-color: rgb(44, 234, 255);
+            color: white;
+            border: 3px solid blue;
+        }
+
+
+        .main {
+            display: flex;
+            height: 600px;
+        }
+
+        .main .left {
+            width: 40%;
+        }
+
+        .hero {
+            background-color: rgb(213, 75, 255);
+            color: white;
+            height: 250px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            border: 3px solid blue;
+        }
+
+        .sidebar {
+            background-color: orangered;
+            color: white;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            border: 3px solid blue;
+        }
+
+        .main .right {
+            width: 60%;
+        }
+
+        .Maincontenr {
+            background-color: rgb(147, 255, 75);
+            color: white;
+            height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: 3px solid blue;
+        }
+
+        .extra {
+            background-color: rgb(255, 86, 199);
+            color: white;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+            margin-left: 10px;
+            border: 3px solid blue;
+        }
+
+        .image>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+        }
+
+        .image {
+            display: flex;
+        }
+
+        .image .reimage {
+            background-color: rgb(0, 128, 105);
+            color: white;
+            height: 200px;
+            width: 70%;
+            border: 3px solid blue;
+        }
+
+        .image .post {
+            background-color: pink;
+            color: white;
+            height: 200px;
+            width: 30%;
+            margin-left: 10px;
+            border: 3px solid blue;
+        }
+
+        .footer {
+            background-color: orange;
+            color: white;
+            height: 100px;
+            border: 3px solid blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+
+
+        <div class="main">
+            <div class="left">
+                <div class="hero">Hero</div>
+                <div class="sidebar">Sidebar</div>
+            </div>
+            <div class="right">
+                <div class="Maincontenr">Main Content</div>
+                <div class="extra">Extra Content</div>
+            </div>
+        </div>
+
+
+        <div class="image">
+            <div class="reimage">Related Images</div>
+            <div class="post">Related Posts</div>
+        </div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

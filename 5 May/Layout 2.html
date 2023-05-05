@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 2</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 30px;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+
+        .container {
+            height: 100vh;
+        }
+
+        .main {
+            display: flex;
+            height: 80vh;
+        }
+
+        .item-2 {
+            background-color: blueviolet;
+            width: 30vw;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sidebar {
+            width: 70vw;
+            display: flex;
+            flex-direction: column;
+        }
+ 
+        .sidebar .item-3 {
+            background-color: blueviolet;
+            height: 100%;
+            margin: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .item-1 {
+            height: 10vh;
+            background-color: red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10px 10px 0 10px;
+        }
+
+        .item-5 {
+            height: 9vh;
+            background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-inline: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p class="item-1">Header</p>
+        <div class="main">
+            <p class="item-2">Sidebar</p>
+            <div class="sidebar">
+                <p class="item-3">Content</p>
+                <p class="item-3">Content</p>
+            </div>
+        </div>
+        <p class="item-5">Footer</p>
+    </div>
+</body>
+
+</html>
