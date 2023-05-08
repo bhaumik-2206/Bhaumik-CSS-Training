@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Exam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           
+        }
+
+        body {
+            background-color: rgb(143, 135, 135);
+        }
+
+        .container {
+            display: flex;
+            width: 100%;
+            height: 100vh;
+
+        }
+
+        .first {
+            width: 30%;
+            height: 50vh;
+        }
+
+        .main1 {
+            display: flex;
+            display: 100%;
+        }
+
+        .red {
+            height: 50vh;
+            width: 50%;
+            background-color: red;
+        }
+
+        .dark {
+            background-color: rgb(160, 0, 0);
+        }
+
+        .yellow {
+            width: 100%;
+            height: 50vh;
+            background-color: yellow;
+        }
+
+        .second {
+            width: 20%;
+        }
+
+        .gray {
+            height: 200px;
+            background-color: rgb(173, 171, 171);
+        }
+
+        .third {
+            width: 25%;
+        }
+
+        .main2 {
+            width: 100%;
+            height: 33vh;
+            background-color: gray;
+        }
+
+        .darks {
+            height: 33vh;
+            background-color: rgb(75, 75, 75);
+        }
+
+        .darkest {
+            height: 34vh;
+            background-color: rgb(45, 44, 44);
+        }
+
+        .main3 {
+            width: 100%;
+            height: 40vh;
+            background-color: rgb(255, 82, 82);
+        }
+        .main30 {
+            width: 100%;
+            height: 40vh;
+            background-color: rgb(199, 58, 58);
+        }
+
+        .main4 {
+            width: 100%;
+            height: 20vh;
+            background-color: rgb(100, 34, 34);
+        }
+
+        .forth {
+            width: 25%;
+        }
+        .main7{
+            width: 100%;
+            height: 20vh;
+            background-color: green;
+        }
+        .main6{
+            width: 100%;
+            height: 40vh;
+            background-color: rgb(255, 0, 0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="main1">
+                <div class="red"></div>
+                <div class="red dark"></div>
+            </div>
+            <div class="yellow"></div>
+        </div>
+
+
+        <div class="second">
+            <div class="main2"></div>
+            <div class="main2 darks"></div>
+            <div class="main2 darkest"></div>
+        </div>
+        <div class="third">
+            <div class="main3"></div>
+            <div class="main30"></div>
+            <div class="main4"></div>
+        </div>
+        <div class="forth">
+            <div class="main6"></div>
+            <div class="main7"></div>
+            <div class="main6"></div>
+        </div>
+    </div>
+</body>
+
+</html>
