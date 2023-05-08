@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(143, 135, 135);
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 95%;
+            border: 2px solid black;
+        }
+
+        .top {
+            height: 30px;
+            background-color: rgb(255, 110, 135);
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main {
+            display: flex;
+            width: 100%;
+            height: 909px;
+        }
+
+        .left {
+            width: 20%;
+            height: 893px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .bluetop {
+            height: 30px;
+            background-color: rgb(110, 120, 255);
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .empty {
+            background-color: rgb(162, 168, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 96.5%;
+        }
+
+        .center {
+            width: 60%;
+        }
+
+        .topmain {
+            border: 2px solid black;
+            margin-block: 5px;
+            height: 893px;
+        }
+
+        .topheading {
+            height: 30px;
+            background-color: rgb(255, 110, 135);
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .panel3 {
+            border: 2px solid black;
+            margin: 5px;
+        }
+
+        .panel31 {
+            height: 30px;
+            background-color: rgb(110, 120, 255);
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .masth {
+            background-color: rgb(162, 168, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+        }
+
+        .panel4 {
+            border: 2px solid black;
+            margin: 5px;
+            height: 464px;
+        }
+
+        .panel41 {
+            height: 30px;
+            background-color: rgb(255, 110, 135);
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex{
+            width: 100%;
+            display: flex;
+        }
+        .leftflex{
+            width: 20%;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .centerflex{
+            width: 60%;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .card1{
+            height: 30px;
+            background-color: rgb(110, 120, 255);
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .leftnav{
+            background-color: rgb(162, 168, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 386px;
+        }
+        .panel7 {
+            border: 2px solid black;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .panel71 {
+            height: 30px;
+            background-color: rgb(110, 120, 255);
+            border-bottom: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footer {
+            background-color: rgb(162, 168, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 146px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">Panel Layout 1 - Left To Right</div>
+
+
+        <div class="main">
+            <div class="left">
+                <div class="bluetop">Panel Card 1</div>
+                <div class="empty">Empty-Flex Width</div>
+            </div>
+
+            <div class="center">
+                <div class="topmain">
+                    <div class="topheading">Panel Layout 2 - Top To Bottom</div>
+                    <div class="panel3">
+                        <div class="panel31">Panel Card 3</div>
+                        <div class="masth">(Masthead)</div>
+                    </div>
+
+                    <div class="panel4">
+                        <div class="panel41">Panel Layout 3 - Left to Right</div>
+                        <div class="flex">
+                            <div class="leftflex">
+                                <div class="card1">Panel Card 4</div>
+                                <div class="leftnav">(Left Navigation)</div>
+                            </div>
+                            <div class="centerflex">
+                                <div class="card1">Panel Card 5</div>
+                                <div class="leftnav">(Main Content Area)</div>
+                            </div>
+                            <div class="leftflex">
+                                <div class="card1">Panel Card 6</div>
+                                <div class="leftnav">(Right Navigation)</div>
+                            </div>
+                        </div>
+                        <div class="panel7">
+                            <div class="panel71">Panel Card 7</div>
+                            <div class="footer">(Footer)</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+            <div class="left">
+                <div class="bluetop">Panel Card 2</div>
+                <div class="empty">Empty-Flex Width</div>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

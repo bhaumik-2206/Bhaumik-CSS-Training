@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        /* ------header------ */
+        .header {
+            display: flex;
+            justify-content: center;
+        }
+
+        .header>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .headerleft {
+            width: 25%;
+            height: 30px;
+            background-color: aqua;
+            margin: 10px;
+        }
+
+        .headerright {
+            width: 25%;
+            height: 30px;
+            background-color: aqua;
+            margin: 10px;
+        }
+
+        /* ------Navigation Bar--------- */
+        .navigationbar {
+            display: flex;
+            justify-content: center;
+        }
+
+        .navigationbar>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            width: 10%;
+            height: 30px;
+            background-color: gray;
+            margin: 10px 170px 0px 30px;
+            align-self: left;
+        }
+
+        .nav {
+            width: 25%;
+            height: 30px;
+            background-color: gray;
+            margin: 10px 10px 0px 40px;
+            align-self: left;
+        }
+
+        .img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: gray;
+            margin: 10px 30px 0px 0px;
+        }
+
+        /* ---------top fullwidth---------- */
+        .topfullwidth {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .topfullwidth {
+            background-color: aqua;
+            margin: 10px 0px;
+            height: 150px;
+        }
+
+        /* -----------top and bottom------------ */
+
+        .top {
+            width: 70vw;
+            height: 100px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        /* -----------Main----------- */
+        .main {
+            width: 70vw;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .left {
+            width: 80%;
+        }
+
+        .left>* {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contop {
+            width: 100%;
+            height: 100px;
+            background-color: aqua;
+            margin: 10px 0px;
+        }
+
+        .con {
+            width: 100%;
+            height: 200px;
+            background-color: gray;
+            margin: 10px 0px;
+        }
+
+        .right {
+            background-color: aqua;
+            height: 420px;
+            width: 30vh;
+            margin: 10px 0px 10px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* -------footer--------- */
+        .black {
+            width: 100%;
+            background-color: black;
+            /* height: 20px; */
+            margin: 10px auto;
+            padding: 10px;
+        }
+        .footer4>*{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer4{
+            width: 71.5vw;
+            margin: 0 auto;
+            color: white;
+            display: flex;
+        }
+        .footertop{
+            height: 200px;
+            width: 25%;
+            margin: 10px;
+            background-color: aqua;
+        }
+
+        .footer>*{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer{
+            width: 71.5vw;
+            margin: 0 auto;
+            color: white;
+            display: flex;
+        }
+        .footerfs{
+            height: 30px;
+            width: 50%;
+            margin: 10px;
+            background-color: aqua;
+        }
+        .footerbot>*{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footerbot{
+            width: 71.5vw;
+            margin: 0 auto;
+            color: white;
+        }
+
+        .footerlast{
+            height: 30px;
+            width: 50%;
+            background-color: aqua;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="header">
+            <div class="headerleft">Header Topbar Left</div>
+            <div class="headerright">Header Topbar Right</div>
+        </div>
+
+        <div class="navigationbar">
+            <div class="logo">Logo</div>
+            <div class="nav">Navigation Menu</div>
+            <div class="img"></div>
+        </div>
+
+        <div class="topfullwidth">
+            Top FullWidth
+        </div>
+
+        <div class="top">Top</div>
+
+        <div class="main">
+            <div class="left">
+                <div class="contop">Content Top</div>
+                <div class="con">Content</div>
+                <div class="contop">Content Bottom</div>
+            </div>
+            <div class="right">Primary</div>
+        </div>
+
+        <div class="top">Bottom</div>
+
+        <div class="black">
+            <div class="footer4">
+                <div class="footertop">Footer Top First</div>
+                <div class="footertop">Footer Top Second</div>
+                <div class="footertop">Footer Top Third</div>
+                <div class="footertop">Footer Top Forth</div>
+            </div>
+            <div class="footer">
+                <div class="footerfs">Footer First</div>
+                <div class="footerfs">Footer Second</div>
+            </div>
+            <div class="footerbot">
+                <div class="footerlast">Footer First</div>
+                <div class="footerlast">Footer Second</div>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
