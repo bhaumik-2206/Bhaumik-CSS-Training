@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 5</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(229, 229, 229);
+            width: 100vw;
+            height: 100vh;
+        }
+        .flex{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .first {
+            width: 20%;
+        }
+
+        .Rohit {
+            height: 50%;
+            background-color: red;
+        }
+
+        .blue {
+            height: 50%;
+            background-color: blue;
+        }
+
+        .second {
+            width: 15%;
+        }
+
+        .Shikhar {
+            height: 33.33%;
+            background-color: green;
+        }
+
+        .main {
+            width: 50%;
+        }
+
+        .top {
+            display: flex;
+            height: 30%;
+        }
+
+        .Hardik {
+            width: 33.33%;
+            height: 100%;
+            background-color: red;
+        }
+
+        .left {
+            height: 100%;
+            width: 25%;
+        }
+
+        .right {
+            height: 100%;
+            width: 75%;
+        }
+
+        .bottom {
+            height: 70%;
+            display: flex;
+        }
+
+        .Rinku {
+            height: 50%;
+        }
+
+        .Jasprit {
+            width: 50%;
+            height: 100%;
+            background-color: blue;
+        }
+
+        .bowler {
+            height: 25%;
+            display: flex;
+        }
+
+        .allrounder {
+            height: 75%;
+            width: 100%;
+            display: flex;
+        }
+
+        .lsg {
+            height: 100%;
+            width: 40%;
+        }
+
+        .Rahul {
+            width: 100%;
+            height: 50%;
+            background-color: blue;
+        }
+
+        .mixplayer {
+            width: 100%;
+            height: 100%;
+        }
+
+        .newplayer {
+            width: 100%;
+            background-color: red;
+            height: 70%;
+            display: flex;
+        }
+
+        .kkr {
+            width: 100%;
+            height: 30%;
+            background-color: blueviolet;
+        }
+
+        .gill {
+            width: 50%;
+        }
+
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        .red1 {
+            background-color: blueviolet;
+        }
+
+        .aqua {
+            background-color: aqua;
+        }
+
+        .green {
+            background-color: rgb(30, 69, 30);
+        }
+
+        .blue {
+            background-color: brown;
+        }
+        .orange {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <div class="Rohit flex">Rohit Sharma</div>
+            <div class="Rohit blue flex">Virat Kohli</div>
+        </div>
+        <div class="second">
+            <div class="Shikhar orange flex">Shikhar Dhavan</div>
+            <div class="Shikhar green flex">Yujavendra Chahal</div>
+            <div class="Shikhar aqua flex">Prithvi Shaw</div>
+        </div>
+        <div class="second">
+            <div class="Shikhar green flex">Ishan Kishan</div>
+            <div class="Shikhar aqua flex">N natarajan</div>
+            <div class="Shikhar flex ">Mayank Agarval</div>
+        </div>
+
+        <div class="main"> <!--50% -->
+            <div class="top"> <!--100% -->
+                <div class="Hardik aqua flex">Hardik Pandya</div> <!--33.33% -->
+                <div class="Hardik red1 flex">MS Dhoni</div>
+                <div class="Hardik  flex">Andre Russel</div>
+            </div>
+            <div class="bottom"> <!--100% -->
+                <div class="left"> <!--25% -->
+                    <div class="Rinku blue flex">Kuldeep Yadav</div>
+                    <div class="Rinku orange flex">Suryakumatr Yadav</div>
+                </div>
+                <div class="right"> <!--75% -->
+                    <div class="bowler">
+                        <div class="Jasprit orange flex">Jasprit Bumarah</div>
+                        <div class="Jasprit flex">Bhuvaneshvar Kumar</div>
+                    </div>
+                    <div class="allrounder">
+                        <div class="lsg">
+                            <div class="Rahul red1 flex">KL Rahul</div>
+                            <div class="Rahul blue flex">Krunal Pandya</div>
+                        </div>
+                        <div class="mixplayer">
+                            <div class="newplayer">
+                                <div class="gill  flex">Shubhaman Gill</div>
+                                <div class="gill aqua flex">Ruturaj Gayakvad</div>
+                            </div>
+                            <div class="kkr flex">Rinku Singh</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

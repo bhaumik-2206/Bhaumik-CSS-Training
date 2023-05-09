@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 25px;
+        }
+
+        body {
+            background-color: rgb(229, 229, 229);
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .w-35 {
+            width: 34%;
+            margin: .5%;
+        }
+
+        .w-30 {
+            width: 29%;
+            margin: .5%;
+        }
+
+        .radius {
+            border-radius: 10px;
+            border: 2px solid blue;
+        }
+
+        .radiusblack {
+            border-radius: 10px;
+            border: 2px solid black;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading {
+            background-color: rgb(0, 0, 198);
+            color: white;
+            height: 10%;
+        }
+
+        .main {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            margin: .5%;
+        }
+
+        .left {
+            width: 24%;
+            height: 100%;
+        }
+
+        .square {
+            width: 100%;
+            height: 24%;
+            margin: 1.5%;
+        }
+
+        .right {
+            width: 75%;
+            height: 100%;
+        }
+
+        .top {
+            height: 28%;
+            margin: 1%;
+        }
+
+        .square3 {
+            width: 29%;
+            height: 100%;
+            margin: 5px;
+        }
+
+        .bottom {
+            height: 70%;
+            display: flex;
+        }
+
+        .leftodd {
+            width: 45%;
+            margin: 5px 10px 20px 16px;
+            height: 100%;
+        }
+
+        .rectangle {
+            height: 30.8%;
+            margin-top: 5px;
+        }
+
+        .inlineblock {
+            display: inline-block;
+        }
+
+        .right2 {
+            width: 64%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .same4 {
+            width: 45%;
+            height: 47%;
+            margin: 1%;
+        }
+
+        .wrap {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .same12 {
+            width: 30.5%;
+            height: 22.5%;
+            margin: 1%;
+        }
+
+        .topthird {
+            height: 79%;
+            width: 100%;
+        }
+
+        .bottomthird {
+            margin-top: 2%;
+            height: 19%;
+            width: 100%;
+        }
+
+        .heading1 {
+            background-color: rgb(0, 0, 198);
+            color: white;
+            height: 30%;
+        }
+
+        .main3{
+            width: 100%;
+            height: 87.5%;
+            display: flex;
+        }
+
+        .leftt {
+            width: 39%;
+            margin: 1%;
+            height: 100%;
+        }
+
+        .rightt {
+            width: 59%;
+            margin: 1%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .square6 {
+            width: 100%;
+            height: 32%;
+            margin-block: 5px;
+        }
+        .same5 {
+            width: 47.5%;
+            height: 49%;
+        }
+        .last{
+            width: 100%;
+            height: 70%;
+            display: flex;
+        }
+        .last3{
+            width: 33%;
+            height: 85%;
+            margin: 5px;
+        }
+
+
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: rgb(0, 115, 255);
+        }
+
+        .green {
+            background-color: rgb(0, 168, 0);
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .orange {
+            background-color: orangered;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first w-35 radius">
+            <div class="heading center">Corporate Center</div>
+            <div class="main">
+                <div class="left">
+                    <div class="square green radiusblack center">A</div>
+                    <div class="square green radiusblack center">H</div>
+                    <div class="square green radiusblack center">U</div>
+                    <div class="square blue radiusblack center">C</div>
+                </div>
+                <div class="right">
+                    <div class="top center">
+                        <div class="square3 blue radiusblack center">C</div>
+                        <div class="square3 green radiusblack center">I</div>
+                        <div class="square3 green radiusblack center">S</div>
+                    </div>
+                    <div class="bottom">
+                        <div class="leftodd">
+                            <div class="rectangle radiusblack green center">S</div>
+                            <div class="rectangle radiusblack blue center">I</div>
+                            <div class="rectangle radiusblack green center">L</div>
+                        </div>
+                        <div class="right2">
+                            <div class="same4 radiusblack center green">C</div>
+                            <div class="same4 radiusblack center green">S</div>
+                            <div class="same4 radiusblack center green">A</div>
+                            <div class="same4 radiusblack center blue">F</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="second w-35 radius">
+            <div class="heading center">Group Services</div>
+            <div class="wrap">
+                <div class="same12 blue radiusblack center">P</div>
+                <div class="same12 green radiusblack center">R</div>
+                <div class="same12 blue radiusblack center">A</div>
+                <div class="same12 green radiusblack center">B</div>
+                <div class="same12 green radiusblack center">P</div>
+                <div class="same12 green radiusblack center">R</div>
+                <div class="same12 orange radiusblack center">L</div>
+                <div class="same12 blue radiusblack center">S</div>
+                <div class="same12 orange radiusblack center">I</div>
+                <div class="same12 blue radiusblack center">D</div>
+                <div class="same12 green radiusblack center">G</div>
+                <div class="same12 green radiusblack center">A</div>
+            </div>
+        </div>
+
+        <div class="third w-30">
+            <div class="topthird radius">
+                <div class="heading center">Strategy & Enterprise</div>
+                <div class="main3">
+                    <div class="leftt">
+                        <div class="square6 green radiusblack center">C</div>
+                        <div class="square6 green radiusblack center">I</div>
+                        <div class="square6 green radiusblack center">S</div>
+                    </div>
+                    <div class="rightt">
+                        <div class="same5 green radiusblack center" style="margin-top: 5px;">P</div>
+                        <div  class="same5 green radiusblack center" style="margin-left: 5px;">R</div>
+                        <div class="same5 orange radiusblack center" style="margin-top: 5px;">A</div>
+                        <div  class="same5 green radiusblack center" style="margin-left: 5px;">B</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bottomthird radius">
+                <div class="heading1 center">Customer And Business</div>
+                <div class="last">
+                    <div class="last3 center green radiusblack">A</div>
+                    <div class="last3 center green radiusblack">T</div>
+                    <div class="last3 center green radiusblack">M</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
