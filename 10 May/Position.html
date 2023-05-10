@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+    <style>
+        html{
+            font-size: 20px;
+        }
+        body{
+            background-color: rgb(249, 138, 255);
+        }
+        .container {
+            width: 500rem;
+            height: 15rem;
+            border: .25rem solid red;
+            position: relative;
+            margin: 10px ;
+        }
+
+        .box {
+            width: 4rem;
+            height: 4rem;
+            background-color: green;
+            display: inline-block;
+            border: 2px solid black;
+        }
+
+        .relative {
+            position: relative;
+            top: 1rem;
+            left: 1rem;
+            background-color: blue;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: blue;
+            top: 1rem;
+            left: 1rem;
+        }
+
+        .main {
+            overflow: scroll;
+        }
+
+        .fixed {
+            width: 10rem;
+            height: 5rem;
+            background-color: blue;
+            color: white;
+            position: fixed;
+        }
+
+        .sticky {
+            width: 10rem;
+            height: 5rem;
+            background-color: blue;
+            color: white;
+            position: sticky;
+            top: 1rem;
+            left: 1rem;
+            bottom: 1rem;
+        }
+        .flex{
+            display: flex;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex">
+        <div class="container">
+            <div class="box"></div>
+            <div class="box relative"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <h2>Move in his original position(Relative)</h2>
+        </div>
+        <br>
+        <div class="container">
+            <div class="box"></div>
+            <div class="box absolute"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <h2>Move in his relative parent position(Absolute) </h2>
+        </div>
+    </div>
+
+    <div class="flex">
+        <br>                            
+        <div class="container main">
+            <div class="fixed">This is fixed</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, sed maxime porro quae est cumque
+                numquam. Natus, fugiat et non, totam necessitatibus sint harum voluptas dicta nam alias facilis,
+                cupiditate doloribus. Est et facilis mollitia. Nobis quam hic et quod nisi eligendi aliquam dolorum ab
+                deleniti sequi incidunt exercitationem tempora nihil, quos repellendus at rem voluptas laboriosam dolore
+                eum! Id dolores fugiat veritatis recusandae facilis exercitationem illum labore mollitia nesciunt eum
+                reiciendis neque ducimus tempora, dignissimos laboriosam aliquid numquam debitis quibusdam. Eaque dolore
+                nemo hic, error, officiis harum voluptatem eligendi assumenda laudantium consequatur totam
+                reprehenderit? Sequi ducimus harum reiciendis iste ad nobis perspiciatis dolorem asperiores ea adipisci
+                sapiente, laudantium, placeat minima dicta voluptatibus totam molestiae dolorum, nesciunt consectetur
+                saepe? Soluta veniam repellendus similique blanditiis excepturi maxime autem, nam, molestiae harum
+                minima maiores incidunt rerum expedita? Non minus delectus, quibusdam ipsum sequi ut accusamus optio aut
+                voluptates explicabo possimus beatae architecto maiores libero, quos sed quaerat modi expedita! Nostrum
+                accusantium magnam quidem saepe cum! Harum velit quia quos tenetur doloremque neque vel alias vero
+                aliquid. Id, neque! Cum sunt magnam unde beatae id, sint exercitationem iste natus molestias incidunt
+                veniam earum perferendis? Voluptatum et repudiandae hic. Tempore, labore. Nobis molestiae voluptatem est
+                excepturi repellat perferendis reiciendis quae odit id vero nihil tenetur unde illo ipsam molestias eos
+                hic earum porro quos voluptatum, repudiandae ex. Minima optio sequi illo itaque. Ad nostrum commodi quis
+                error est perferendis aliquam beatae pariatur repellendus! Culpa quo expedita iure? Modi suscipit velit
+                voluptates ullam doloribus facere cum, culpa consequatur at rerum corporis illo explicabo cumque
+                voluptatem. Minus officiis ex suscipit ipsum, odio culpa dolore porro. Rem, beatae aspernatur. Eligendi
+                cumque quo aspernatur animi! Commodi enim qui fugiat asperiores ex? Repellat dolor dignissimos, suscipit
+                error atque non accusamus nostrum laborum perferendis! Magni possimus recusandae nobis? A, sequi!</p>
+        </div>
+        <br>
+        <div class="container main">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, sed maxime porro quae est cumque
+                numquam. Natus, fugiat et non, totam necessitatibus sint harum voluptas dicta nam alias facilis,
+                cupiditate doloribus. Est et facilis mollitia. Nobis quam hic et quod nisi eligendi aliquam dolorum ab
+                deleniti sequi incidunt exercitationem tempora nihil, quos repellendus at rem voluptas laboriosam dolore
+                eum! Id dolores fugiat veritatis recusandae facilis exercitationem illum labore mollitia nesciunt eum
+                reiciendis neque ducimus tempora, dignissimos laboriosam aliquid numquam debitis quibusdam. Eaque dolore
+                nemo hic, error, officiis harum voluptatem eligendi assumenda laudantium consequatur totam
+                reprehenderit? Sequi ducimus harum reiciendis iste ad nobis perspiciatis dolorem asperiores ea adipisci
+                sapiente, laudantium, placeat minima dicta voluptatibus totam molestiae dolorum, nesciunt consectetur
+                saepe? Soluta veniam repellendus similique blanditiis excepturi maxime autem, nam, molestiae harum
+                minima maiores incidunt rerum expedita? Non minus delectus, quibusdam ipsum sequi ut accusamus optio aut
+                voluptates explicabo possimus beatae architecto maiores libero, quos sed quaerat modi expedita! Nostrum
+                accusantium magnam quidem saepe cum! Harum velit quia quos tenetur doloremque neque vel alias vero
+                aliquid. Id, neque! Cum sunt magnam unde beatae id, sint exercitationem iste natus molestias incidunt
+                veniam earum perferendis? Voluptatum et repudiandae hic. Tempore, labore. Nobis molestiae voluptatem est
+                excepturi repellat perferendis reiciendis quae odit id vero nihil tenetur unde illo ipsam molestias eos
+                hic earum porro quos voluptatum, repudiandae ex. Minima optio sequi illo itaque. Ad nostrum commodi quis
+                error est perferendis aliquam beatae pariatur repellendus! Culpa quo expedita iure? Modi suscipit velit
+                voluptates ullam doloribus facere cum, culpa consequatur at rerum corporis illo explicabo cumque
+                voluptatem. Minus officiis ex suscipit ipsum, odio culpa dolore porro. Rem, beatae aspernatur. Eligendi
+                cumque quo aspernatur animi! Commodi enim qui fugiat asperiores ex? Repellat dolor dignissimos, suscipit
+                error atque non accusamus nostrum laborum perferendis! Magni possimus recusandae nobis? A, sequi!</p>
+            <div class="sticky">This is Sticky</div>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, sed maxime porro quae est cumque
+                numquam. Natus, fugiat et non, totam necessitatibus sint harum voluptas dicta nam alias facilis,
+                cupiditate doloribus. Est et facilis mollitia. Nobis quam hic et quod nisi eligendi aliquam dolorum ab
+                deleniti sequi incidunt exercitationem tempora nihil, quos repellendus at rem voluptas laboriosam dolore
+                eum! Id dolores fugiat veritatis recusandae facilis exercitationem illum labore mollitia nesciunt eum
+                reiciendis neque ducimus tempora, dignissimos laboriosam aliquid numquam debitis quibusdam. Eaque dolore
+                nemo hic, error, officiis harum voluptatem eligendi assumenda laudantium consequatur totam
+                reprehenderit? Sequi ducimus harum reiciendis iste ad nobis perspiciatis dolorem asperiores ea adipisci
+                sapiente, laudantium, placeat minima dicta voluptatibus totam molestiae dolorum, nesciunt consectetur
+                saepe? Soluta veniam repellendus similique blanditiis excepturi maxime autem, nam, molestiae harum
+                minima maiores incidunt rerum expedita? Non minus delectus, quibusdam ipsum sequi ut accusamus optio aut
+                voluptates explicabo possimus beatae architecto maiores libero, quos sed quaerat modi expedita! Nostrum
+                accusantium magnam quidem saepe cum! Harum velit quia quos tenetur doloremque neque vel alias vero
+                aliquid. Id, neque! Cum sunt magnam unde beatae id, sint exercitationem iste natus molestias incidunt
+                veniam earum perferendis? Voluptatum et repudiandae hic. Tempore, labore. Nobis molestiae voluptatem est
+                excepturi repellat perferendis reiciendis quae odit id vero nihil tenetur unde illo ipsam molestias eos
+                hic earum porro quos voluptatum, repudiandae ex. Minima optio sequi illo itaque. Ad nostrum commodi quis
+                error est perferendis aliquam beatae pariatur repellendus! Culpa quo expedita iure? Modi suscipit velit
+                voluptates ullam doloribus facere cum, culpa consequatur at rerum corporis illo explicabo cumque
+                voluptatem. Minus officiis ex suscipit ipsum, odio culpa dolore porro. Rem, beatae aspernatur. Eligendi
+                cumque quo aspernatur animi! Commodi enim qui fugiat asperiores ex? Repellat dolor dignissimos, suscipit
+                error atque non accusamus nostrum laborum perferendis! Magni possimus recusandae nobis? A, sequi!</p>
+        </div>
+    </div>
+</body>
+
+</html>

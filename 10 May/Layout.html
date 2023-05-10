@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 20px;
+        }
+
+        body {
+            background-color: rgb(229, 229, 229);
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top {
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            position: relative;
+        }
+
+        .box {
+            width: 50%;
+            height: 100%;
+        }
+
+        .bottom {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            position: relative;
+        }
+
+        .radius {
+            border-radius: 50%;
+        }
+
+        .circle {
+            width: 50%;
+            height: 100%;
+            border-radius: 50%;
+            position: absolute;
+            left: 25%;
+        }
+
+        
+        .flex{
+            display: flex;
+        }
+        .left1{
+            width: 50%;
+            height: 100%;
+        }
+        .right1{
+            width: 50%;
+            height: 100%;
+        }
+        .box1{
+            width: 25%;
+            height: 100%;
+            position: absolute;
+            left: 37.5%;
+        }
+
+        .white {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .gray {
+            background-color: rgb(105, 105, 105);
+        }
+
+        .red {
+            background-color: red;
+        }
+
+        .marron {
+            background-color: rgb(86, 0, 0);
+        }
+
+        .blue {
+            background-color: rgb(94, 42, 184);
+        }
+
+        .aqua {
+            background-color: rgb(0, 210, 210);
+        }
+
+        .lightred {
+            background-color: rgb(133, 51, 51);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="left">
+                <div class="box  white"></div>
+                <div class="box gray"></div>
+                <div class="box circle radius marron"></div>
+            </div>
+            <div class="right">
+                <div class="box lightred"></div>
+                <div class="box circle radius blue"></div>
+                <div class="box red"></div>
+            </div>
+        </div>
+        <div class="bottom flex">
+            <div class="left1 flex">
+                <div class="box red"></div>
+                <div class="box lightred"></div>
+            </div>
+            <div class="right1 flex">
+                <div class="box gray"></div>
+                <div class="box white"></div>
+                <div class="box1 radius aqua"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

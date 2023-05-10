@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Shadow</title>
+    <style>
+        body {
+            background-color: rgb(117, 104, 104);
+        }
+
+        .container {
+            display: flex;
+            gap: 130px;
+        }
+
+        .main {
+            width: 500px;
+            height: 100px;
+            border: 5px solid white;
+            background-color: black;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .red {
+            box-shadow: 20px 20px green;
+        }
+
+        .inset {
+            box-shadow: inset 20px 20px blue;
+        }
+
+        .blur {
+            box-shadow: 20px 20px 10px blueviolet;
+        }
+
+        .spreadradius {
+            box-shadow: 20px 20px 10px 10px aqua;
+        }
+
+        .multiplesplus {
+            box-shadow: 10px 10px  red, 20px 20px  green, 30px 30px  blue,40px 40px black;
+        }
+
+        .minus {
+            box-shadow: 20px -20px 10px rgb(255, 255, 0);
+        }
+
+        .minus2 {
+            box-shadow: -20px -20px 10px rgb(242, 0, 255);
+        }
+
+        .multiple {
+            box-shadow: -10px -10px 10px red, -20px -20px 10px green, -30px -30px 10px blue,-40px -40px 10px black,-50px -50px 10px aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main1">
+            <div class="main red">
+                <h1>This is Box-shadow</h1>
+            </div>
+            <br><br><br>
+            <div class="main blur">
+                <h1>This is Blur Box-shadow</h1>
+            </div>
+            <br><br><br>
+            <div class="main minus">
+                <h1>This is y-Minus  Box-shadow</h1>
+            </div>
+            <br><br>
+            <div class="main spreadradius">
+                <h1>This is spread Box-shadow</h1>
+            </div>
+        </div>
+        <div class="main1">
+            <div class="main multiplesplus">
+                <h1>This is Box-shadow</h1>
+            </div>
+            <br><br><br>
+            <div class="main inset">
+                <h1>This is Inset Box-shadow</h1>
+            </div>
+            <br><br>
+            <div class="main minus2">
+                <h1>This is Minus Box-shadow</h1>
+            </div>
+            <br><br><br><br>
+            <div class="main multiple">
+                <h1>This is Multiple Plus Box-shadow</h1>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
