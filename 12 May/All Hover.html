@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Side Hover</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(54, 0, 136);
+        }
+        .button{
+            padding: 40px 80px;
+            font-size: 50px;
+            color: black;
+            position: relative;
+            overflow: hidden;
+            border: 5px solid white;
+            background-color: transparent;
+        }
+        .btn1::after{
+            content: "THANKS";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            left: -100%;
+            top: 0;
+            background-color: orange;
+            transition: all .3s linear;
+        }
+        .btn1:hover::after{
+            left: 0%;
+        }
+        .btn2::after{
+            content: "THANKS";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            top: -100%;
+            left: 0;
+            background-color: orange;
+            transition: all .3s linear;
+        }
+        .btn2:hover::after{
+            top: 0%;
+        }
+        .btn3::after{
+            content: "THANKS";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            left: 100%;
+            top: 0;
+            background-color: orange;
+            transition: all .3s linear;
+        }
+        .btn3:hover::after{
+            left: 0%;
+        }
+        .btn4::after{
+            content: "THANKS";
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+            top: 100%;
+            left: 0;
+            background-color: orange;
+            transition: all .3s linear;
+        }
+        .btn4:hover::after{
+            top: 0%;
+        }
+    </style>
+</head>
+<body>
+    <button class="button btn1">SLIDE LEFT</button>
+    <button class="button btn2">SLIDE TOP</button>
+    <button class="button btn3">SLIDE RIGHT</button>
+    <button class="button btn4">SLIDE BOTTOM</button>
+</body>
+</html>
