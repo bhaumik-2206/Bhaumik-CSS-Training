@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Background-Image</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(122, 255, 122);
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex{
+            display: flex;
+            gap: 5px;
+        }
+        .contentbottom{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            font-size: 1.5rem;
+            gap: 5px;
+        }
+        .container{
+            width: 90%;
+            height: 80%;
+            color: white;
+        }
+        .h-100{
+            height: 100%;
+        }
+        .h-50{
+            height: 50%;
+        }
+        .first{
+            width: 50%;
+            background-image: url('https://m.media-amazon.com/images/M/MV5BODI0MzdhODAtNDMwNi00NGZlLTg1Y2YtN2M5ZGFmOThkZGM3XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_FMjpg_UX1000_.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .content{
+            padding: 20px;
+        }
+        .first button{
+            padding: 10px 30px;
+            background-color: rgb(33, 130, 168);
+            color: white;
+            border: none;
+        }
+        .second{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .third{
+            width: 25%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+        .top1{
+            background-image: url('https://plus.unsplash.com/premium_photo-1661265881020-39322f7a2878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHdvJTIwZ2lybCUyMGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+            background-size: cover;
+            background-position: center;
+        }
+        .bottom1{
+            background-image: url('https://images.unsplash.com/photo-1530047139082-5435ca3c4614?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHdvJTIwZ2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+            background-size: cover;
+            background-position: center;
+        }
+        .top2{
+            background-image: url('https://images.unsplash.com/photo-1530047139082-5435ca3c4614?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dHdvJTIwZ2lybHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60');
+            background-size: cover;
+            background-position: center;
+        }
+        .bottom2{
+            background-image: url('https://plus.unsplash.com/premium_photo-1661265881020-39322f7a2878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8dHdvJTIwZ2lybCUyMGltYWdlfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container center flex">
+        <div class="first h-100 contentbottom">
+            <div class="content">
+                <button>Friends</button>
+                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quos natus reprehenderit. Dolores odit tempore sit quae quia deleniti eos veniam impedit culpa quasi unde laudantium, sequi molestias suscipit voluptatum.</h3>
+                <p>26 apr , 2023</p>
+            </div>
+        </div>
+        <div class="second h-100">
+            <div class="top1 h-50 contentbottom">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam.</h3>
+                    <p>26 apr , 2023</p>
+                </div>
+            </div>
+            <div class="bottom1 h-50 contentbottom">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam.</h3>
+                    <p>26 apr , 2023</p>
+                </div>
+            </div>
+        </div>
+        <div class="third h-100">
+            <div class="top2 h-50 contentbottom">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam.</h3>
+                    <p>26 apr , 2023</p>
+                </div>
+            </div>
+            <div class="bottom2 h-50 contentbottom">
+                <div class="content">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, totam.</h3>
+                    <p>26 apr , 2023</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

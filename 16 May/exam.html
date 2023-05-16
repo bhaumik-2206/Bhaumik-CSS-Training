@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            background-color: rgb(210, 255, 210);
+        }
+
+        .left {
+            padding: 10px 5px;
+        }
+
+        .right {
+            padding: 10px 10px;
+        }
+
+        input {
+            padding: 4px 10px;
+            border-radius: 5px;
+        }
+
+        .btn1 {
+            padding: 4px 10px;
+            border-radius: 5px;
+            border: 1px solid green;
+            color: green;
+            cursor: pointer;
+        }
+
+        .padding {
+            padding: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            padding: 0px 5px;
+        }
+
+        .box button {
+            padding: 10px 20px;
+            background-color: #0d6efd;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+            border: none;
+        }
+
+        section {
+            width: 100%;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .top {
+            display: flex;
+            width: 65%;
+            gap: 10px;
+            padding: 10px;
+        }
+
+        .box {
+            width: 50%;
+            border: 2px solid black;
+            border-radius: 4px;
+        }
+
+        .box img {
+            width: 100%;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1.5rem;
+        }
+
+        .yellow {
+            padding: 20px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="left center">
+            <h2>Navbar</h2>
+            <a href="">home</a>
+            <a href="">link</a>
+            <a href="">disabled</a>
+        </div>
+        <div class="right">
+            <input type="text" placeholder="Search" name="" id="">
+            <button class="btn1">Search</button>
+        </div>
+    </nav>
+
+    <section>
+        <div class="top">
+            <div class="box">
+                <img src="https://source.unsplash.com/900x300/?nature,rain" alt="Image">
+                <div class="padding">
+                    <h2>Card Title</h2>
+                    <p>This is a longer card with supporting text below as a natural lead -in to additional content.
+                        This content is a little bit longer.</p>
+                    <button>Go Somewhere</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/900x300/?nature,rain" alt="Image">
+                <div class="padding">
+                    <h2>Card Title</h2>
+                    <p>This is a longer card with supporting text below as a natural lead -in to additional content.
+                        This content is a little bit longer.</p>
+                    <button>Go Somewhere</button>
+                </div>
+            </div>
+        </div>
+        <div class="top">
+            <div class="box">
+                <img src="https://source.unsplash.com/900x300/?nature,rain" alt="Image">
+                <div class="padding">
+                    <h2>Card Title</h2>
+                    <p>This is a longer card with supporting text below as a natural lead -in to additional content.
+                        This content is a little bit longer.</p>
+                    <button>Go Somewhere</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="https://source.unsplash.com/900x300/?nature,rain" alt="Image">
+                <div class="padding">
+                    <h2>Card Title</h2>
+                    <p>This is a longer card with supporting text below as a natural lead -in to additional content.
+                        This content is a little bit longer.</p>
+                    <button>Go Somewhere</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <footer class="yellow center">
+            <a href="">Home</a><a href="">Menu</a><a href="">Contect</a><a href="">LogIn</a>
+        </footer>
+        <footer class="yellow center">
+            Copyrightbybhaumikpanchal
+        </footer>
+    </footer>
+</body>
+
+</html>

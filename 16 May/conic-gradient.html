@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conic-Gradient</title>
+    <style>
+        body{
+            background-image: url('dawid-zawila--G3rw6Y02D0-unsplash.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+        .circle{
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid white;
+        }
+        .circle1 {
+            background-image: conic-gradient(green,red, yellow);
+        }
+        .circle2 {
+            background-image: conic-gradient(green,red, yellow,green);
+        }
+        .circle3 {
+            background-image: conic-gradient(from 150deg,red, yellow);
+        }
+        .circle4 {
+            background-image: conic-gradient(red, transparent);
+        }
+        .circle5 {
+            background-image: conic-gradient( from 45deg,red 0deg , red 90deg,yellow 90deg , yellow 180deg , green 180deg , green 270deg , blue 270deg , blue 360deg);
+        }
+        .circle6 {
+            background-image: repeating-conic-gradient(red 0deg , red 90deg,yellow 90deg , yellow 180deg);
+            background-size: 25px 10px;
+        }
+        .circle7 {
+            background-image: repeating-conic-gradient(green 0deg, green 15deg , blue 15deg , blue 30deg);
+        }
+        .circle8 {
+            background-image: repeating-conic-gradient(green 20%,blue 30%);
+        }
+        .circle9 {
+            background-image: conic-gradient( at 30% 40%,green,red, yellow);
+        }
+        .circle10 {
+            background-image: conic-gradient(green 200deg,red , yellow);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="circle circle1"></div>
+    <div class="circle circle2"></div>
+    <div class="circle circle3"></div>
+    <div class="circle circle4"></div>
+    <div class="circle circle5"></div>
+    <div class="circle circle6"></div>
+    <div class="circle circle7"></div>
+    <div class="circle circle8"></div>
+    <div class="circle circle9"></div>
+    <div class="circle circle10"></div>
+</body>
+</html>

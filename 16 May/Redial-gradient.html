@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radial-Gradient</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-image: url('https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1244&q=80');
+            background-size: cover;
+            text-align: center;
+        }
+
+        .h1 {
+            font-size: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .box {
+            border: 5px solid green;
+            padding: 40px;
+            width: 500px;
+        }
+
+        .box1 {
+            background-image: radial-gradient(red, yellow);
+        }
+
+        .box2 {
+            background-image: radial-gradient( circle at top, red, transparent );
+        }
+
+        .box3 {
+            background-image: radial-gradient( circle, red 20%, yellow 30% );
+        }
+
+        .box4 {
+            background-image: radial-gradient(circle at bottom, red, yellow, green, purple, black);
+        }
+
+        .box5 {
+            background-image: radial-gradient(circle at 20% 30%, red  , yellow, green);
+        }
+
+        .box6 {
+            background-image: repeating-radial-gradient( blue 20%, green 30%);
+        }
+        .box7 {
+            background-image: radial-gradient(ellipse at top, red  , transparent),
+            radial-gradient(ellipse at bottom, blue , transparent),
+            radial-gradient(ellipse at left  , green ,transparent),
+            radial-gradient(ellipse at right,black ,transparent);
+        }
+
+        .box8 {
+            background-image: radial-gradient(closest-side at 30% 30%, red 20%,yellow,green);
+            /* background-image: radial-gradient(closest-corner at 30% 30%, red 20%,yellow,green); */
+            /* background-image: radial-gradient(farthest-side at 30% 30%, red 20%,yellow,green); */
+            /* background-image: radial-gradient(farthest-corner at 30% 30%, red 20%,yellow,green); */
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1">Redial-gradient</h1>
+    <div class="container">
+        <div class="box box1">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+        <div class="box box2">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+        <div class="box box3">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+        <div class="box box4">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+        <div class="box box5">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+        <div class="box box6">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+        <div class="box box7">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+        <div class="box box8">
+            <h1>Hello</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quos molestiae, nam, deleniti,
+                consequatur minus necessitatibus tempore esse corrupti quod delectus et sapiente deserunt quae
+                dignissimos eius! Ipsum, numquam voluptatum.</p>
+        </div>
+    </div>
+</body>
+
+</html>
