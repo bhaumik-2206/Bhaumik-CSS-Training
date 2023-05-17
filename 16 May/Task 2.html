@@ -57,24 +57,18 @@
             border: none;
         }
 
-        .boxes {
-            width: 100%;
-            /* background-color: red; */
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
 
         .top {
-            width: 60%;
-            /* background-color: blue; */
+            max-width: 1000px;
+            margin-inline: auto;
             display: flex;
             gap: 10px;
-            justify-content: space-between;
+            flex-wrap: wrap;
+            justify-content: center;
         }
 
         .box {
-            /* padding: 100px; */
+            width: 28%;
             color: black;
             background-color: white;
             display: flex;
@@ -83,14 +77,17 @@
             padding: 20px;
             border-radius: 10px;
         }
-        i{
+
+        i {
             padding: 10px;
             align-self: flex-start;
         }
-        .right{
+
+        .right {
             padding: 0px 10px;
         }
-        .blue{
+
+        .blue {
             background-color: rgb(0, 81, 255);
             border-radius: 5px;
         }
@@ -107,55 +104,58 @@
             <input type="text" placeholder="you@yoursite.com">
             <button>Get started</button>
         </div>
-        <div class="boxes center">
-            <div class="top">
-                <div class="box">
-                    <i class="fa fa-car blue"></i>
-                    <div class="right">
-                        <h5>Buying and item Support</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
-                    </div>
-                </div>
-
-                <div class="box">
-                    <i class="fa fa-car blue"></i>
-                    <div class="right">
-                        <h5>Licensing</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <i class="fa fa-car blue"></i>
-                    <div class="right">
-                        <h5>Your Account</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
-                    </div>
+        
+        <div class="top">
+            <div class="box">
+                <i class="fa fa-car blue"></i>
+                <div class="right">
+                    <h5>Buying and item Support</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
                 </div>
             </div>
-            <div class="top">
-                <div class="box">
-                    <i class="fa fa-car blue"></i>
-                    <div class="right">
-                        <h5>Copyright and Trademarks</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
-                    </div>
-                </div>
 
-                <div class="box">
-                    <i class="fa fa-car blue"></i>
-                    <div class="right">
-                        <h5>Tax & Compliance</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
-                    </div>
-                </div>
-                <div class="box">
-                    <i class="fa fa-car blue"></i>
-                    <div class="right">
-                        <h5>Licensing</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
-                    </div>
+            <div class="box">
+                <i class="fa fa-car blue"></i>
+                <div class="right">
+                    <h5>Licensing</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
                 </div>
             </div>
+
+            <div class="box">
+                <i class="fa fa-car blue"></i>
+                <div class="right">
+                    <h5>Your Account</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-car blue"></i>
+                <div class="right">
+                    <h5>Copyright and Trademarks</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-car blue"></i>
+                <div class="right">
+                    <h5>Tax & Compliance</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
+                </div>
+            </div>
+
+            <div class="box">
+                <i class="fa fa-car blue"></i>
+                <div class="right">
+                    <h5>Licensing</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
