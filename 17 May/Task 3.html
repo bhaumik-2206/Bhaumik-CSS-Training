@@ -46,6 +46,7 @@
             gap: 20px;
             box-shadow: 1px 1px 10px 0px black;
             display: flex;
+            transition: .5s ease;
         }
 
         .left {
@@ -76,8 +77,9 @@
             border-radius: 50%;
             padding: 10px 15px;
             text-align: center;
-            top: 5px;
-            left: 5px;
+            top: 15px;
+            left: 15px;
+            transition: .5s ease;
         }
 
         .bottom {
@@ -133,6 +135,11 @@
         .box:hover>.right .readmore {
             color: green;
             text-decoration: underline;
+        }
+
+        .box:hover>.left .date {
+            background-color: white;
+            color: black;
         }
     </style>
 </head>
