@@ -18,20 +18,24 @@
             align-items: center;
         }
 
-        nav {
+        header{
+            padding: 10px;
             display: flex;
             justify-content: space-between;
-            background-color: rgb(210, 255, 210);
+            align-items: center;
+        }
+        .logo{
+            font-size: 1.5rem;
         }
 
-        .left {
-            padding: 10px 5px;
+        ul li{
+            list-style: none;
+            padding-inline: 15px;
         }
 
-        .right {
-            padding: 10px 10px;
+        .disabled{
+            opacity: .5;
         }
-
         input {
             padding: 4px 10px;
             border-radius: 5px;
@@ -52,7 +56,6 @@
         a {
             text-decoration: none;
             font-size: 1.2rem;
-            padding: 0px 5px;
         }
 
         .box button {
@@ -66,22 +69,19 @@
 
         section {
             width: 100%;
-            /* background-color: red; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            max-width: 1200px;
+            margin-inline: auto;
         }
 
         .top {
             display: flex;
-            width: 65%;
-            gap: 10px;
+            flex-wrap: wrap;
+            gap: 15px;
             padding: 10px;
         }
 
         .box {
-            width: 50%;
+            width: 49%;
             border: 2px solid black;
             border-radius: 4px;
         }
@@ -91,32 +91,42 @@
         }
 
         .footer {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            font-size: 1.5rem;
+            background-color: yellow;
         }
 
         .yellow {
             padding: 20px;
             background-color: yellow;
         }
+        hr{
+            background-color: white;
+            height:5px;
+        }
+        .h2{
+            padding: 20px;
+            font-size: 1.5rem;
+            text-align: center;
+        }
     </style>
 </head>
 
 <body>
-    <nav>
+    <header>
         <div class="left center">
-            <h2>Navbar</h2>
-            <a href="">home</a>
-            <a href="">link</a>
-            <a href="">disabled</a>
+            <div class="logo">Navbar</div>
+            <nav>
+                <ul  class="center">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Link</a></li>
+                    <li><a class="disabled" href="#">Disabled</a></li>
+                </ul>
+            </nav>
         </div>
         <div class="right">
-            <input type="text" placeholder="Search" name="" id="">
+            <input type="text">
             <button class="btn1">Search</button>
         </div>
-    </nav>
+    </header>
 
     <section>
         <div class="top">
@@ -138,8 +148,8 @@
                     <button>Go Somewhere</button>
                 </div>
             </div>
-        </div>
-        <div class="top">
+        <!-- </div>
+        <div class="top"> -->
             <div class="box">
                 <img src="https://source.unsplash.com/900x300/?nature,rain" alt="Image">
                 <div class="padding">
@@ -161,12 +171,16 @@
         </div>
     </section>
     <footer class="footer">
-        <footer class="yellow center">
-            <a href="">Home</a><a href="">Menu</a><a href="">Contect</a><a href="">LogIn</a>
-        </footer>
-        <footer class="yellow center">
-            Copyrightbybhaumikpanchal
-        </footer>
+        <div class="top center">
+            <a href="">Home</a>
+            <a href="">Feature</a>
+            <a href="">Pricing</a>
+            <a href="">About</a>
+        </div>
+        <hr>
+        <div class="bottom">
+            <h2 class="h2">@copyrightbybhaumikpanchal</h2>
+        </div>
     </footer>
 </body>
 
