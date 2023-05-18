@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2 Responsive</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        .main {
+            padding: 5px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 19.85%;
+            border: 1px solid gray;
+            position: relative;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            padding-block: 40px;
+        }
+
+        .content {
+            padding: 20px;
+            padding-top: 30px;
+            font-size: 1.3rem;
+        }
+
+        .sold {
+            padding: 15px 10px;
+            position: absolute;
+            border-radius: 30px;
+            top: 5%;
+            right: 5%;
+            color: white;
+            background-color: gray;
+        }
+
+        .discount {
+            padding: 15px 10px;
+            position: absolute;
+            border-radius: 50%;
+            top: 5%;
+            right: 5%;
+            color: white;
+            background-color: orangered;
+        }
+
+        @media only screen and (max-width: 1300px) {
+            .box {
+                width: 24.5%;
+            }
+        }
+
+        @media only screen and (max-width: 900px) {
+            .box {
+                width: 33%;
+            }
+        }
+
+        @media only screen and (max-width: 650px) {
+            .box {
+                width: 49%;
+            }
+        }
+
+        @media only screen and (max-width: 400px) {
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="sold">Sold out</div>
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+        <div class="box">
+            <img src="shoes image.webp" alt="">
+            <div class="discount">-15%</div>
+            <div class="content">
+                <p>Black Shoes</p>
+                <p>$245</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
