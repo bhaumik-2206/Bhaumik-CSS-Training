@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color:mediumslateblue;
+        }
+
+        .main{
+            padding: 30px 0px;
+            max-width: 800px;
+            margin-inline: auto;
+        }
+        .boxes{
+            display: flex;
+            flex-direction: column;
+        }
+        .box{
+            width: 35%;
+            padding: 10px;
+            border: 1px solid black;
+            text-align: right;
+            border-radius: 10px;
+            box-shadow: 10px 10px white;
+            position: relative;
+        }
+        .box h2{
+            color: white;
+        }
+        .box h3{
+            font-size:1.5rem;
+            color: black;
+        }
+        .box p{
+            color: white;
+            padding-left: 40px;
+        }
+        .dot{
+            position: absolute;
+            width: 15px ;
+            height: 15px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 1px 1px 10px 0px white;
+        }
+
+        .dotright{
+            right: -15%;
+            top: 50%;
+        }
+        .dot-right{
+            left: -15%;
+            top: 50%;
+        }
+
+        .right-box{
+            width: 35%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 10px;
+            align-self: flex-end;
+            box-shadow: 10px 10px   white;
+            position: relative;
+        }
+        .right-box h2{
+            color: white;
+        }
+        .right-box h3{
+            font-size:1.5rem;
+            color: black;
+        }
+        .right-box p{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="boxes">
+            <div class="box">
+                <div class="dot dotright"></div>
+                <h2>01</h2>
+                <h3>Resources</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, non cupiditate. Quae, aperiam?erendis doloribus porro laudantium deleniti dicta, ipsum veniam.</p>
+            </div>
+            <div class="right-box">
+                <div class="dot dot-right"></div>
+                <h2>02</h2>
+                <h3>project Manager</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, non cupiditate. Quae, aperiam?erendis doloribus porro laudantium deleniti dicta, ipsum veniam.</p>
+            </div>
+            <div class="box">
+                <div class="dot dotright"></div>
+                <h2>03</h2>
+                <h3>Quality Assurance</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, non cupiditate. Quae, aperiam?erendis doloribus porro laudantium deleniti dicta, ipsum veniam.</p>
+            </div>
+            <div class="right-box">
+                <div class="dot dot-right"></div>
+                <h2>04</h2>
+                <h3>Support Team</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, non cupiditate. Quae, aperiam?erendis doloribus porro laudantium deleniti dicta, ipsum veniam.</p>
+            </div>
+            <div class="box">
+                <div class="dot dotright"></div>
+                <h2>05</h2>
+                <h3>Dedication</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, non cupiditate. Quae, aperiam?erendis doloribus porro laudantium deleniti dicta, ipsum veniam.</p>
+            </div>
+            <div class="right-box">
+                <div class="dot dot-right"></div>
+                <h2>06</h2>
+                <h3>Perfection</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, non cupiditate. Quae, aperiam?erendis doloribus porro laudantium deleniti dicta, ipsum veniam.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
