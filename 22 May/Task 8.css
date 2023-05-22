@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.w-90 {
+    width: 90%;
+    margin-inline: auto;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    padding: 10px;
+    justify-content: space-between;
+}
+
+nav ul {
+    padding: 0px 20px;
+}
+
+nav ul li {
+    padding: 0px 20px;
+}
+
+.nav-right {
+    gap: 25px;
+}
+
+.menu {
+    display: none;
+    font-size: 1.5rem;
+}
+
+.second {
+    justify-content: space-between;
+}
+
+section {
+    background-color: rgb(241, 241, 241);
+    padding: 45px 5px;
+}
+
+.sec-left {
+    width: 60%;
+    font-size: 3.4rem;
+}
+
+.sec-right {
+    width: 40%;
+}
+
+.about {
+    padding: 40px 0px;
+}
+
+span {
+    color: red;
+}
+
+.para {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-block: 40px;
+}
+
+.future {
+    position: relative;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.future-heading {
+    position: absolute;
+    left: 53%;
+    top: 5%;
+    font-size: 1.4rem;
+}
+
+.you-tube {
+    padding: 20px;
+    width: 50%;
+    text-align: justify;
+}
+
+.you-tube iframe {
+    border-radius: 15px;
+    border: none;
+}
+
+.vision {
+    width: 50%;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 60px;
+    gap: 30px;
+}
+
+.box {
+    width: 80%;
+    color: black;
+    font-size: 1.3rem;
+    align-items: flex-start;
+    padding-block: 10px;
+}
+
+.email .box {
+    color: black;
+    font-size: 1.3rem;
+    align-items: flex-start;
+    padding-block: 30px;
+}
+
+.content {
+    padding-left: 30px;
+}
+
+.box i {
+    padding-top: 20px;
+    color: rgb(255, 0, 43);
+}
+
+.box .i {
+    background-color: rgb(207, 207, 207);
+    border-radius: 50%;
+    padding: 20px;
+    color: rgb(255, 0, 43);
+    font-size: 1.5rem;
+}
+
+.bgpink {
+    width: 100%;
+    background-color: rgb(255, 0, 43)
+}
+
+.dslculture {
+    justify-content: space-between;
+    padding-block: 30px;
+}
+
+.culture {
+    width: 50%;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 30px;
+    gap: 25px;
+    font-size: 1.2rem;
+}
+
+.culture p {
+    text-align: justify;
+}
+
+.contact {
+    padding: 20px 0px;
+}
+
+.contact h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.map-mail {
+    width: 100%;
+    align-items: flex-start;
+}
+
+.map,
+.email {
+    width: 50%;
+}
+
+.map iframe {
+    width: 90%;
+    height: 400px;
+}
+
+.left-footer h5{
+    padding: 10px 0px;
+}
+.center-footer h2{
+    padding: 10px 0px;
+}
+
+.footer {
+    justify-content: space-between;
+}
+
+
+.last-footer {
+    width: 100%;
+    background-color: rgb(255, 0, 43);
+    text-align: center;
+    padding: 20px 0px;
+    color: white;
+    font-size: 1.2rem;
+}
+
+@media only screen and (max-width:850px) {
+    .nav-right {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .future-heading {
+        position: static;
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+@media only screen and (max-width:700px) {
+    .nav-center {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
+
+@media only screen and (max-width: 551px) {
+    .second {
+        display: block;
+    }
+
+    .sec-left {
+        text-align: center;
+        width: 100%;
+    }
+
+    .sec-right {
+        width:80%;
+        display: block;
+        margin-inline: auto;
+        padding-block: 30px;
+    }
+
+    .future {
+        display: block;
+    }
+
+    .you-tube{
+        width: 90%;
+    }
+
+    .you-tube iframe{
+        width: 90%;
+    }
+
+    .vision{
+        width: 90%;
+    }
+
+    .box{
+        width: 100%;
+    }
+
+    .dslculture{
+        display: block;
+    }
+
+    .culture{
+        width: 100%;
+    }
+
+    .you-tube{
+        width: 90%;
+    }
+
+    .you-tube iframe{
+        width: 100%;
+    }
+
+    .contact h1{
+        text-align: left;
+    }
+
+    .map-mail{
+        display: block;
+    }
+
+    .map , .email{
+        width: 100%;
+    }
+
+    .map iframe{
+        width: 100%;
+    }
+
+    .map .box{
+        width: 100%;
+    }
+
+    .footer{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding-block: 15px;
+    }
+}

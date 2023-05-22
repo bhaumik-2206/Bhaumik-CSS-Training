@@ -7,283 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Task 8.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            background-color: white;
-        }
-
-        li {
-            list-style-type: none;
-        }
-
-        a {
-            text-decoration: none;
-            color: red;
-            font-size: 1.2rem;
-            cursor: pointer;
-        }
-
-        .w-90 {
-            width: 90%;
-            margin-inline: auto;
-        }
-
-        .flex {
-            display: flex;
-            align-items: center;
-        }
-
-        header {
-            padding: 10px;
-            justify-content: space-between;
-        }
-
-        nav ul {
-            padding: 0px 20px;
-        }
-
-        nav ul li {
-            padding: 0px 20px;
-        }
-
-        .nav-right {
-            gap: 10px;
-        }
-
-        .second {
-            justify-content: space-between;
-        }
-
-        section {
-            background-color: rgb(241, 241, 241);
-            padding: 45px 5px;
-        }
-
-        .sec-left {
-            width: 60%;
-            font-size: 3.4rem;
-        }
-
-        .sec-right {
-            width: 40%;
-        }
-
-        .about {
-            padding: 40px 0px;
-        }
-
-        span{
-            color: red;
-        }
-        .para{
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
-        }
-
-        .future {
-            position: relative;
-        }
-
-        .future-heading {
-            position: absolute;
-            left: 53%;
-            top: 5%;
-            font-size: 1.4rem;
-        }
-
-        .you-tube {
-            padding: 20px;
-            width: 50%;
-            text-align: justify;
-        }
-
-        .you-tube iframe {
-            border-radius: 15px;
-            border: none;
-        }
-
-        .vision {
-            width: 100%;
-            align-items: flex-start;
-            flex-direction: column;
-            padding-top: 20px;
-            /* padding-left: 300px; */
-        }
-
-        .box {
-            width: 80%;
-            color: black;
-            padding-top: 40px;
-            font-size: 1.5rem;
-            align-items: flex-start;
-        }
-
-        .content {
-            padding-left: 30px;
-        }
-
-        .box i {
-            padding-top: 20px;
-            color: rgb(255, 0, 43);
-        }
-
-        .bgpink {
-            width: 100%;
-            background-color: rgb(255, 0, 43)
-        }
-
-        .dslculture {
-            justify-content: space-between;
-        }
-
-        .culture {
-            color: white;
-            padding-right: 20px;
-            font-size: 1.2rem;
-        }
-
-        .culture p {
-            padding: 10px 0px;
-        }
-
-        .contact {
-            padding: 20px 0px;
-        }
-
-        .map-mail {
-            width: 100%;
-        }
-
-        .map,
-        .email {
-            width: 50%;
-        }
-
-        .map iframe {
-            width: 90%;
-            height: 400px;
-        }
-
-        .footer {
-            justify-content: space-between;
-        }
-
-        .last-footer {
-            width: 100%;
-            background-color: rgb(255, 0, 43);
-            text-align: center;
-            padding: 20px 0px;
-            color: white;
-            font-size: 1.2rem;
-        }
-
-        @media only screen and (max-width:850px) {
-            .nav-right {
-                display: none;
-            }
-
-            /* .nav-right::before {
-                content: " ";
-                display: block;
-            } */
-        }
-
-        @media only screen and (max-width:800px) {
-            .future-heading {
-                position: static;
-                display: block;
-                text-align: center;
-                padding-top: 20px;
-            }
-        }
-
-        @media only screen and (max-width:700px) {
-            .nav-center {
-                display: none;
-            }
-        }
-
-        @media only screen and (max-width: 551px) {
-
-            .respo::before {
-                content: "";
-                background-image: url('text_align_right.png');
-                width: 26px;
-                height: 19px;
-                position: absolute;
-                right: 10%;
-            }
-
-            .second {
-                display: block;
-            }
-
-            .sec-left {
-                text-align: center;
-                width: 100%;
-            }
-
-            .sec-right {
-                width: 90%;
-                padding-block: 30px;
-            }
-
-            .you-tube {
-                display: block;
-                width: 100%;
-            }
-
-            .future {
-                flex-direction: column;
-            }
-
-            .email {
-                width: 100%;
-            }
-
-            .dslculture {
-                flex-direction: column;
-            }
-
-            .map-mail {
-                display: block;
-            }
-
-            .map {
-                width: 100%;
-            }
-
-            .email {
-                width: 100%;
-                margin-inline: auto;
-            }
-
-            .footlogo img {
-                display: block;
-                width: 50%;
-                padding-block: 30px;
-            }
-
-            .footer {
-                display: block;
-            }
-
-            .ptdsi {
-                width: 100%;
-                padding-block: 20px;
-            }
-
-            .footer-contact {
-                width: 100%;
-                padding-block: 20px;
-            }
-        }
+        
     </style>
 </head>
 
@@ -304,7 +30,7 @@
                 </ul>
             </nav>
         </div>
-        <div class="respo"></div>
+        <i class="menu fa fa-align-right "></i>
         <div class="nav-right flex">
             <i class="fa fa-home"></i>
             <i class="fa fa-envelope"></i>
@@ -344,24 +70,22 @@
             <h2>Our Future Prespective</h2>
         </div>
         <div class="future w-90 flex">
-            <div style="width: 90%; padding-right: 100px;" class="you-tube">
+            <div class="you-tube">
                 <iframe width="100%" height="350px" src="https://www.youtube.com/embed/JXYkjHKakGE"></iframe>
             </div>
             <div class="vision flex">
                 <div class="box flex">
-                    <i class="fa fa-car blue"></i>
+                    <i class="fa fa-group blue"></i>
                     <div class="content">
                         <h2>Vision</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam. Lorem ipsum dolor sit
-                            amet. </p>
+                        <p>To become the leading application service provider (ASP) focusing on front-end application delivered for Indonesia’s banking and fi nancial industry.</p>
                     </div>
                 </div>
                 <div class="box flex">
-                    <i class="fa fa-car blue"></i>
+                    <i class="fa fa-bullseye blue"></i>
                     <div class="content">
                         <h2>Misson</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, ipsam. Lorem ipsum dolor sit
-                            amet. </p>
+                        <p>To grow the business together with clients by providing enhanced services and wide delivery channel to end-users. </p>
                     </div>
                 </div>
             </div>
@@ -370,7 +94,7 @@
 
     <div class="bgpink">
         <div class="dslculture w-90 flex">
-            <div class="you-tube">
+            <div class="culture flex">
                 <h1>DCL Culture</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab tenetur itaque quam eos, deserunt ipsam
                     culpa nulla sunt officiis totam, harum quae temporibus! Officia doloremque adipisci corrupti
@@ -389,7 +113,7 @@
     </div>
 
     <div class="contact w-90">
-        <h1 style="text-align: center; padding: 20px 0px;">Contact Us</h1>
+        <h1>Contact Us</h1>
         <div class="map-mail flex">
             <div class="map">
                 <iframe
@@ -399,21 +123,21 @@
             </div>
             <div class="email">
                 <div class="box flex">
-                    <i class="fa fa-home blue"></i>
+                    <i class="fa fa-home i"></i>
                     <div class="content">
                         <h2>Alamat</h2>
                         <p>Jl. Halim Perdana Kusuma, Ring Road <br>Bamgkalan , Madura , Jawa Timur.</p>
                     </div>
                 </div>
                 <div class="box flex">
-                    <i class="fa fa-envelope blue"></i>
+                    <i class="fa fa-envelope i"></i>
                     <div class="content">
                         <h2>Email</h2>
                         <p>sekolahku@sch.id</p>
                     </div>
                 </div>
                 <div class="box flex">
-                    <i class="fa fa-phone blue"></i>
+                    <i class="fa fa-phone i"></i>
                     <div class="content">
                         <h2>Telphone</h2>
                         <p>(031) 3092223</p>
@@ -436,7 +160,7 @@
             </div>
             <div class="center-footer">
                 <div class="footer-contact">
-                    <h4>Contact</h4>
+                    <h2>Contact</h2>
                     <p>Phone : -62.21.5314.11355</p>
                     <p>Fax : -62.21.5314.11355</p>
                     <p>Email : community@dwidasa.com</p>
