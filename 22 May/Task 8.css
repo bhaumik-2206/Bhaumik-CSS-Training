@@ -115,12 +115,13 @@ span {
     gap: 30px;
 }
 
-.box {
+.vision .box {
     width: 80%;
     color: black;
     font-size: 1.3rem;
     align-items: flex-start;
     padding-block: 10px;
+    padding-left: 40px;
 }
 
 .email .box {
@@ -175,7 +176,7 @@ span {
     padding: 20px 0px;
 }
 
-.contact h1{
+.contact h1 {
     text-align: center;
     padding: 20px 0px;
 }
@@ -195,10 +196,11 @@ span {
     height: 400px;
 }
 
-.left-footer h5{
+.left-footer h5 {
     padding: 10px 0px;
 }
-.center-footer h2{
+
+.center-footer h2 {
     padding: 10px 0px;
 }
 
@@ -253,7 +255,7 @@ span {
     }
 
     .sec-right {
-        width:80%;
+        width: 80%;
         display: block;
         margin-inline: auto;
         padding-block: 30px;
@@ -263,59 +265,60 @@ span {
         display: block;
     }
 
-    .you-tube{
+    .you-tube {
         width: 90%;
     }
 
-    .you-tube iframe{
+    .you-tube iframe {
         width: 90%;
     }
 
-    .vision{
+    .vision {
         width: 90%;
     }
 
-    .box{
+    .box {
         width: 100%;
     }
 
-    .dslculture{
+    .dslculture {
         display: block;
     }
 
-    .culture{
+    .culture {
         width: 100%;
     }
 
-    .you-tube{
+    .you-tube {
         width: 90%;
     }
 
-    .you-tube iframe{
+    .you-tube iframe {
         width: 100%;
     }
 
-    .contact h1{
+    .contact h1 {
         text-align: left;
     }
 
-    .map-mail{
+    .map-mail {
         display: block;
     }
 
-    .map , .email{
+    .map,
+    .email {
         width: 100%;
     }
 
-    .map iframe{
+    .map iframe {
         width: 100%;
     }
 
-    .map .box{
+    .map .box {
         width: 100%;
     }
 
-    .footer{
+    .footer {
         flex-direction: column;
         align-items: flex-start;
         gap: 30px;
