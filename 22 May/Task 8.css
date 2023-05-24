@@ -81,6 +81,7 @@ span {
     flex-direction: column;
     gap: 20px;
     padding-block: 40px;
+    text-align: justify;
 }
 
 .future {
@@ -137,20 +138,20 @@ span {
 
 .box i {
     padding-top: 20px;
-    color: rgb(255, 0, 43);
+    color: #EE4248;
 }
 
 .box .i {
     background-color: rgb(207, 207, 207);
     border-radius: 50%;
     padding: 20px;
-    color: rgb(255, 0, 43);
+    color: #EE4248;
     font-size: 1.5rem;
 }
 
 .bgpink {
     width: 100%;
-    background-color: rgb(255, 0, 43)
+    background-color: #EE4248;
 }
 
 .dslculture {
@@ -208,10 +209,22 @@ span {
     justify-content: space-between;
 }
 
+.left-footer {
+    width: 30%;
+}
+
+.center-footer {
+    width: 30%;
+}
+
+.right-footer {
+    width: 40%;
+    padding-right: 100px;
+}
 
 .last-footer {
     width: 100%;
-    background-color: rgb(255, 0, 43);
+    background-color:#EE4248;
     text-align: center;
     padding: 20px 0px;
     color: white;
