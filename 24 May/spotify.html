@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Spotify</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body{
+            background-color: black;
+            color: white;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        .left{
+            width: 29%;
+            /* background-color: red; */
+            padding: 10px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        
+        .top-left{
+            background-color: rgb(31, 30, 30);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .library{
+            color: rgb(179, 179, 179);
+            gap: 8px;
+        }
+
+        .bottom-left{
+            background-color: rgb(31, 30, 30);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .second-line{
+            justify-content: space-between;
+            color: rgb(179, 179, 179);
+        }
+
+        .btn{
+            padding: 10px 20px ;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(48, 48, 48);
+            color: WHITE;
+        }
+
+        .recent{
+            justify-content: space-between;
+        }
+
+        select{
+            border: none;
+            background-color: transparent;
+            color: white;
+        }
+
+        .recent button{
+            border: none;
+            color: white;
+            background-color: transparent;
+        }
+
+        .like-songs{
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .songs-left i{
+            background-image: linear-gradient(to bottom right ,rgb(17, 17, 255),white);
+            border-radius: 5px;
+            padding: 15px;
+        }
+
+        .songs-right{
+            padding-left: 15px;
+            flex-direction: column;
+            gap: 5px;
+            font-size: .9rem;
+        }
+
+        .songs-right p , .search{
+            color: rgb(179, 179, 179);
+        }
+
+
+
+        /* ---------------Right------------------------- */
+        
+        .right{
+            width: 71%;
+            /* background-color: blue; */
+            padding: 10px;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .main-right{
+            background-image: linear-gradient(maroon , black);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .upgrade{
+            justify-content: space-between;
+        }
+
+        .upgrade-left i{
+            font-size: 2rem;
+            color: black;
+            opacity: .7;
+            background-color: white;
+            border-radius: 50%;
+        }
+
+        .upd{
+            padding: 10px 20px;
+            background-color: white;
+            border: none;
+            color: black;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+        .upd1{
+            padding: 10px 20px;
+            background-color: rgba(0, 0, 0, 0.502);
+            border: none;
+            color: white;
+            border-radius: 20px;
+            font-weight: bolder;
+        }
+
+        .upgrade-right .user{
+            background-color:  rgba(0, 0, 0, 0.502);
+            border-radius: 50%;
+            padding: 10px;
+        }
+        .greeting{
+            padding: 10px 0px;
+        }
+
+        .daily-playlist{
+            width: 100%;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .daily{
+            width: 32%;
+            gap: 10px;
+            background-color: rgba(255, 255, 255, 0.244);
+            border-radius: 5px;
+        }
+
+        .album{
+            width: 30%;
+        }
+
+        .album img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 5px 0px 0px 5px;
+        }
+
+        .playlist-name{
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left flex">
+            <div class="top-left flex">
+                <div class="home">
+                    <i class="fa-solid fa-house"></i>
+                    <b>Home</b>
+                </div>
+                <div class="search">
+                    <i class="fa fa-search"> </i>
+                    <b>Search</b>
+                </div>
+            </div>
+
+            <div class="bottom-left flex">
+                <div class="second-line flex">
+                    <div class="library flex">
+                        <i class="fa-sharp fa-solid fa-bars fa-rotate-90"> </i>
+                        <p> Your Library</p>
+                    </div>
+                    <div class="arrow">
+                        <i class="fa-solid fa-plus"></i>&nbsp;&nbsp;&nbsp;&nbsp;
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+
+                <div class="playlist">
+                    <button class="btn">Playlists</button>
+                    <button class="btn">Artists</button>
+                    <button class="btn">Albums</button>
+                </div>
+
+                <div class="recent flex">
+                    <i class="fa fa-search"></i>
+                    <button> <b> Recents </b> <select></select> </button>
+                </div>
+
+                <div class="like-songs flex">
+                    <div class="song flex">
+                        <div class="songs-left">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="songs-right flex">
+                            <h4>Liked Songs</h4>
+                            <p><i class="fa-sharp fa-solid fa-thumbtack"></i> playlist • 7 Songs</p>
+                        </div>
+                    </div>
+                    
+                    <div class="song flex">
+                        <div class="songs-left">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="songs-right flex">
+                            <h4>Liked Songs</h4>
+                            <p><i class="fa-sharp fa-solid fa-thumbtack"></i> playlist • 7 Songs</p>
+                        </div>
+                    </div>
+
+                    <div class="song flex">
+                        <div class="songs-left">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="songs-right flex">
+                            <h4>Liked Songs</h4>
+                            <p><i class="fa-sharp fa-solid fa-thumbtack"></i> playlist • 7 Songs</p>
+                        </div>
+                    </div>
+
+                    <div class="song flex">
+                        <div class="songs-left">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="songs-right flex">
+                            <h4>Liked Songs</h4>
+                            <p><i class="fa-sharp fa-solid fa-thumbtack"></i> playlist • 7 Songs</p>
+                        </div>
+                    </div>
+
+                    <div class="song flex">
+                        <div class="songs-left">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="songs-right flex">
+                            <h4>Liked Songs</h4>
+                            <p><i class="fa-sharp fa-solid fa-thumbtack"></i> playlist • 7 Songs</p>
+                        </div>
+                    </div>
+
+                    <div class="song flex">
+                        <div class="songs-left">
+                            <i class="fa-solid fa-heart"></i>
+                        </div>
+                        <div class="songs-right flex">
+                            <h4>Liked Songs</h4>
+                            <p><i class="fa-sharp fa-solid fa-thumbtack"></i> playlist • 7 Songs</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="right flex">
+            <div class="main-right">
+                <div class="upgrade flex">
+                    <div class="upgrade-left">
+                        <i class="fa-sharp fa-solid fa-circle-chevron-down fa-rotate-90"></i>
+                        <i class="fa-sharp fa-solid fa-circle-chevron-down fa-rotate-270"></i>
+                    </div>
+                    <div class="upgrade-right">
+                        <button class="upd" >Upgrade</button>
+                        <button class="upd1"><i style="border: 2px solid white;border-radius: 50%;padding: 2px 4px;" class="fa-solid fa-arrow-up fa-rotate-180"> </i> Install App</button>
+                        <i class="user fa-regular fa-user"></i>
+                    </div>
+                </div>
+
+                <div class="greeting">
+                    <h1>Good Morning</h1>
+                </div>
+
+                <div class="daily-playlist flex">
+                    <div class="daily flex">
+                        <div class="album">
+                            <img src="album.jpg" alt="">
+                        </div>
+                        <div class="playlist-name flex">
+                            <h3>Do Not Skip</h3>
+                        </div>
+                    </div>
+                    <div class="daily flex">
+                        <div class="album">
+                            <img src="album.jpg" alt="">
+                        </div>
+                        <div class="playlist-name flex">
+                            <h3>Bollywood Songs</h3>
+                        </div>
+                    </div>
+                    <div class="daily flex">
+                        <div class="album">
+                            <img src="album.jpg" alt="">
+                        </div>
+                        <div class="playlist-name flex">
+                            <h3>Hollywood Songs</h3>
+                        </div>
+                    </div>
+                    <div class="daily flex">
+                        <div class="album">
+                            <img src="album.jpg" alt="">
+                        </div>
+                        <div class="playlist-name flex">
+                            <h3>Gujarati Songs</h3>
+                        </div>
+                    </div>
+                    <div class="daily flex">
+                        <div class="album">
+                            <img src="album.jpg" alt="">
+                        </div>
+                        <div class="playlist-name flex">
+                            <h3>Punjabi Songs</h3>
+                        </div>
+                    </div>
+                    <div class="daily flex">
+                        <div class="album">
+                            <img src="album.jpg" alt="">
+                        </div>
+                        <div class="playlist-name flex">
+                            <h3>English Songs</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
