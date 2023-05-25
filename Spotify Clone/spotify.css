@@ -89,10 +89,18 @@ select {
     gap: 20px;
 }
 
+.songs-left {
+    width: 13%;
+}
+
 .songs-left i {
     background-image: linear-gradient(to bottom right, rgb(17, 17, 255), white);
     border-radius: 5px;
     padding: 15px;
+}
+
+.songs-left img {
+    width: 100%;
 }
 
 .songs-right {
@@ -200,33 +208,35 @@ select {
     align-items: center;
 }
 
-.top-mixes{
+.top-mixes {
     width: 100%;
     justify-content: space-between;
+    position: relative;
 }
 
-.box1{
+.box1 {
     width: 19%;
     background-color: rgb(23, 23, 23);
     border-radius: 5px;
+    position: relative;
 }
 
-.box1 img{
+.box1 img {
     border-radius: 5px;
 }
 
-.box1 p{
+.box1 p {
     font-size: 1rem;
 }
 
-.padding{
+.padding {
     padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-img{
+img {
     width: 100%;
     object-fit: cover;
 }
@@ -301,6 +311,7 @@ img{
     align-self: center;
     gap: 15px;
     justify-content: flex-end;
+    padding-right: 20px;
 }
 
 
@@ -331,11 +342,33 @@ img{
     box-shadow: 1px 1px 10px 0px black;
 }
 
-.daily:hover{
-    transition: 1s ;
+.daily:hover {
+    transition: 1s;
     background-color: rgba(255, 255, 255, 0.3);
 }
 
-.daily:hover > .play i{
+.daily:hover>.play i {
+    display: block;
+}
+
+.plays i {
+    position: absolute;
+    top: 42%;
+    right: 10%;
+    font-size: 50px;
+    color: green;
+    background-color: black;
+    border-radius: 50%;
+    display: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 10px 0px black;
+}
+
+.box1:hover {
+    transition: 1s;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.padding:hover>.plays i {
     display: block;
 }
