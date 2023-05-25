@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Task 11</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(233, 230, 255);
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .padding {
+            padding: 15px;
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-around;
+            padding-top: 20px;
+        }
+
+        .border {
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .left {
+            width: 15%;
+            font-size: 1.2rem;
+        }
+
+        .set {
+            padding: 20px;
+            color: #007BFF;
+        }
+
+
+
+
+        .center {
+            width: 65%;
+        }
+
+        .center-top {
+            display: flex;
+            gap: 20px;
+        }
+
+        .image {
+            padding: 70px 50px;
+            background-color: rgb(195, 195, 195);
+            display: inline-block;
+        }
+
+        .name {
+            flex-direction: column;
+            gap: 15px;
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        .change {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            font-size: 1.2rem;
+        }
+
+        .administration {
+            text-align: right;
+        }
+
+        .administration p {
+            padding-top: 10px;
+        }
+
+        .settings .setting {
+            border: 1px solid black;
+            border-bottom: none;
+            padding: 10px;
+        }
+
+        .blank {
+            width: 100%;
+            border-bottom: 1px solid black;
+            margin-right: 3%;
+        }
+
+        .full-name {
+            font-size: 1.3rem;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input {
+            font-size: 1.3rem;
+            padding: 5px 8px;
+            width: 90%;
+        }
+
+        .w-50 {
+            width: 50%;
+        }
+
+        .username {
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .email {
+            font-size: 1.3rem;
+        }
+
+        .password {
+            font-size: 1.3rem;
+        }
+
+        .left-pass,
+        .right-pass {
+            width: 50%;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .right-pass input {
+            width: 15px;
+            height: 15px;
+        }
+
+        .save-change button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+            font-size: 1.4rem;
+        }
+
+        .right {
+            width: 15%;
+        }
+
+        .logoout {
+            padding-block: 15px;
+        }
+
+        .log-btn {
+            display: block;
+            margin-inline: auto;
+            background-color: gray;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+        }
+
+        .right-second {
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1.5rem;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="left">
+            <div class="set border">
+                <i class="fa-solid fa-chart-column"></i>
+                <b>Overview</b><br><br>
+                <i class="fa-solid fa-square"></i>
+                <b>CRUD</b><br><br>
+                <i class="fa-solid fa-gear"></i>
+                <b>Overview</b>
+            </div>
+        </div>
+
+
+        <div class="center border">
+            <div class="center-top padding">
+                <div class="image">
+                    <div class="img">140 X 140</div>
+                </div>
+
+                <div class="name flex">
+                    <h1>John Smith</h1>
+                    <p>@johnny.s</p>
+                    <p>Last seen 2 hours ago</p>
+                    <button class="change"><i class="fa-solid fa-camera"> </i> Change Photo</button>
+                </div>
+
+                <div class="administration">
+                    <span
+                        style="background-color: gray;color: white;border-radius: 3px;padding: 4px;">administration</span>
+                    <p style="color: gray;width: 150px;">joined 09 Dec 2017</p>
+                </div>
+            </div>
+
+            <div class="settings flex padding">
+                <div class="setting">Settings</div>
+                <div class="blank"></div>
+            </div>
+
+            <div class="full-name flex padding">
+                <div class="username flex w-50">
+                    <label for="fullname">Full Name</label>
+                    <input type="text " placeholder="John Smith">
+                </div>
+
+                <div class="username flex w-50">
+                    <label for="username">Username</label>
+                    <input type="text" placeholder="jonny.s">
+                </div>
+            </div>
+
+            <div class="email padding flex username">
+                <label for="email">E-mail</label>
+                <input style="width: 95%;" type="email" name="" id="email">
+            </div>
+
+            <div class="email padding flex username">
+                <label for="About">About</label>
+                <textarea style="width: 94%;" class="padding" name="About" id="About" cols="30"
+                    rows="10">My Bio</textarea>
+            </div>
+
+            <div class="password padding flex">
+                <div class="left-pass flex">
+                    <p><b>Change Password</b></p>
+                    <label for="CurrentPassword">Current Password</label>
+                    <input type="password" id="CurrentPassword" placeholder="••••••">
+
+                    <label for="NewPassword">New Password</label>
+                    <input type="password" id="NewPassword" placeholder="••••••">
+
+                    <label for="ConfirmPassword">Confirm Password</label>
+                    <input type="password" id="ConfirmPassword" placeholder="••••••">
+
+                </div>
+                <div class="right-pass flex padding">
+                    <p><b>Keeping In Touch</b></p>
+                    <p>Email Notifications</p>
+
+                    <div class="checkbox padding">
+                        <input type="checkbox" name="" id="Blog" checked>
+                        <label for="Blog"> Blog Posts</label><br>
+
+                        <input type="checkbox" name="" id="Blog" checked>
+                        <label for="Blog"> Newsletter</label><br>
+
+                        <input type="checkbox" name="" id="Blog" checked>
+                        <label for="Blog"> Personal Offers</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="save-change padding">
+                <button style="margin-left: auto;display: block;">Save Change</button>
+            </div>
+        </div>
+
+
+        <div class="right">
+            <div class="logoout border">
+                <button class="log-btn"><i class="fa-solid fa-arrow-right-from-bracket"> </i> LogOut</button>
+            </div>
+
+            <br>
+
+            <div class="support border">
+                <div class="right-second padding flex">
+                    <div class="sup">
+                        <b>Support</b>
+                    </div>
+                    <div class="text">
+                        <p> Get Fast free help <br> from our friendly <br> assistants</p>
+                    </div>
+                    <div class="contact">
+                        <button>Contact</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
