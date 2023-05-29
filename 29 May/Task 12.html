@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+    <title>Task 12</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            height: 100vh;
+            color: #5B7092;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        button {
+            cursor: pointer;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .container {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+            gap: 3rem;
+        }
+
+        .left {
+            width: 30%;
+        }
+
+
+        .top-left {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid rgb(187, 187, 187);
+            padding-bottom: 20px;
+            gap: 15px;
+            text-align: center;
+        }
+
+        .top-left img {
+            width: 50%;
+        }
+
+        .hire button {
+            padding: 10px 20px;
+            background-color: #28A745;
+            color: white;
+            border: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
+
+        .center-left {
+            flex-direction: column;
+            gap: 10px;
+            padding-block: 30px;
+            border-bottom: 2px solid rgb(187, 187, 187);
+        }
+
+        .first-line {
+            gap: 15px;
+        }
+
+        .first-line p {
+            font-weight: bold;
+        }
+
+        .empty {
+            padding-block: 3rem;
+        }
+
+        .last-left {
+            border-top: 2px solid rgb(187, 187, 187);
+            flex-direction: column;
+        }
+
+        .last-left button {
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            font-size: 1.2rem;
+            border-radius: 5px;
+        }
+
+        .mail {
+            justify-content: space-between;
+            padding-block: 30px;
+        }
+
+        .left-status,
+        .right-status {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+
+
+        .right {
+            width: 65%;
+        }
+
+        .message {
+            padding: 20px 0px;
+            border-bottom: 2px solid rgb(187, 187, 187);
+        }
+
+        .message button {
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+
+        .message .btn2 {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+        }
+
+        .message .btn1 {
+            background-color: white;
+            color: #007BFF;
+            border: 2px solid #007BFF;
+        }
+
+        .info {
+            padding: 20px;
+            border-bottom: 2px solid rgb(187, 187, 187);
+            gap: 2rem;
+            color: #5B7092;
+            font-size: 1.2rem;
+        }
+
+        .blue {
+            color: #007BFF;
+        }
+
+        .tweet {
+            border-bottom: 2px solid rgb(187, 187, 187);
+            padding-block: 20px;
+        }
+
+        .left-tweet {
+            width: 10%;
+        }
+
+        .right-tweet {
+            font-family: sans-serif;
+            padding: 15px;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .right-tweet img {
+            border-radius: 10px;
+        }
+
+        .second-image{
+            width: 70%;
+        }
+
+        .last-image{
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container flex">
+        <div class="left ">
+            <div class="top-left flex">
+                <img src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                    alt="">
+                <h1>David Gray. H</h1>
+                <h4>Canada</h4>
+                <p>Lorem ipsum dolor, sit <br> amet consectetur adipisicing <br> elit. Facilis, aut?</p>
+                <div class="hire">
+                    <button>Hire Me</button>
+                    <button>Follow</button>
+                </div>
+            </div>
+
+            <div class="center-left flex">
+                <p style="padding-bottom: 10px;">Skills</p>
+                <div class="first-line flex">
+                    <p>Chalk</p>
+                    <p>Hand Lettering</p>
+                    <p>Information Design</p>
+                </div>
+                <div class="first-line flex">
+                    <p>Graphic Design</p>
+                    <p>Web Design</p>
+                </div>
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="last-left flex">
+                <div class="mail flex">
+                    <div class="left-status flex">
+                        <p>Status</p>
+                        <p>phone</p>
+                        <p>Mail</p>
+                        <p>Facebook</p>
+                        <p>Twitter</p>
+                    </div>
+                    <div style="text-align: right;" class="right-status flex">
+                        <p>Active</p>
+                        <p>006 3435 22</p>
+                        <p>jacod@testmail.com</p>
+                        <p class="blue">David Gray</p>
+                        <p class="blue">@davidgray</p>
+                    </div>
+                </div>
+                <button>Preview</button>
+            </div>
+        </div>
+
+
+
+        <div class="right">
+            <div class="message">
+                <button class="btn1">Message</button>
+                <button class="btn2">Request</button>
+            </div>
+
+            <div class="info flex">
+                <i class="fa fa-home"> Info</i>
+                <i class="fa fa-home blue"> Feed</i>
+                <i class="fa fa-home"> Agenda</i>
+                <i class="fa fa-home"> Resume</i>
+            </div>
+
+            <div class="tweet flex">
+                <div class="left-tweet">
+                    <img src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                        alt="">
+                </div>
+                <div class="right-tweet flex">
+                    <div class="names">
+                        <h3 style="display: inline-block;">Mason Beck</h3>&emsp;
+                        <i class="fa fa-clock-o"> 10 Hours</i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima sint dignissimos laboriosam
+                        quidem, voluptas nisi! Lorem ipsum dolor sit amet.</p>
+                    <div class="likes">
+                        <i class="fa fa-star-o"> 4</i>&emsp;
+                        <i class="fa fa-star-o"> 11</i>&emsp;
+                        <i class="fa fa-share-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweet flex">
+                <div class="left-tweet">
+                    <img src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                        alt="">
+                </div>
+                <div class="right-tweet flex">
+                    <div class="names">
+                        <h3 style="display: inline-block;">Willie Stanley</h3>&emsp;
+                        <i class="fa fa-clock-o"> 10 Hours</i>
+                    </div>
+                    <img class="second-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJhvWpQrh3nIxmjLBQSyH5uu7OKpprR2b4-g&usqp=CAU"
+                        alt="">
+                    <div class="likes">
+                        <i class="fa fa-star-o"> 4</i>&emsp;
+                        <i class="fa fa-star-o"> 11</i>&emsp;
+                        <i class="fa fa-share-alt"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tweet flex">
+                <div class="left-tweet">
+                    <img src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                        alt="">
+                </div>
+                <div class="right-tweet flex">
+                    <div class="names">
+                        <h3 style="display: inline-block;">Mason Beck</h3>&emsp;
+                        <i class="fa fa-clock-o"> 10 Hours</i>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima sint dignissimos laboriosam
+                        quidem, voluptas nisi! Lorem ipsum dolor sit amet.</p>
+                        <img class="last-image" src="https://c8.alamy.com/comp/M5J7P1/call-center-agent-avatar-M5J7P1.jpg"  alt="">
+                    <div class="likes">
+                        <i class="fa fa-star-o"> 4</i>&emsp;
+                        <i class="fa fa-star-o"> 11</i>&emsp;
+                        <i class="fa fa-share-alt"></i>
+                        <i class="fa-solid fa-message"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
