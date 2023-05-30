@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Task</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        i {
+            color: gray;
+        }
+
+        .container {
+            height: 97%;
+            padding: 10px;
+        }
+
+        .main {
+            height: 100%;
+            border: 1px solid gray;
+            border-radius: 10px;
+        }
+
+        .left {
+            height: 100%;
+            width: 20%;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 1px solid gray;
+        }
+
+        .padding {
+            padding: 30px;
+        }
+
+        .logo {
+            width: 20%;
+        }
+
+        .different-nav {
+            border-radius: 10px;
+            padding: 10px;
+        }
+
+        .dashboard {
+            padding-block: 2rem;
+            font-size: 1.3rem;
+            flex-direction: column;
+            /* gap: 1.5rem; */
+        }
+
+
+        .diffe-teams p {
+            display: inline-block;
+            border: 1px solid gray;
+            padding: 7px;
+            border-radius: 5px;
+            color: gray;
+        }
+
+        .diffe-teams b {
+            color: rgb(68, 68, 68);
+        }
+
+        .your-teams h3 {
+            color: rgb(68, 68, 68);
+        }
+
+        .your-teams {
+            flex-direction: column;
+            gap: 15px;
+        }
+
+
+        .left-bottom {
+            font-size: 1.3rem;
+            color: rgb(58, 57, 57);
+        }
+
+        .right {
+            width: 80%;
+            height: 100%;
+            /* background-color: red; */
+        }
+
+        .right-top {
+            justify-content: space-between;
+            border-bottom: 1px solid gray;
+            height: 10%;
+            padding-inline: 2rem;
+        }
+
+        .search {
+            align-items: center;
+        }
+
+        .search i {
+            font-size: 1.2rem;
+        }
+
+        input {
+            background-color: transparent;
+            border: none;
+            padding-inline: 20px;
+            font-size: 1.2rem;
+        }
+
+        .photo .liner {
+            width: 1px;
+            background-color: gray;
+            height: 50%;
+        }
+
+        .photo {
+            align-items: center;
+            gap: 1.5rem;
+        }
+
+        .photo img {
+            width: 50px;
+        }
+
+        select {
+            background-color: transparent;
+            border: none;
+            color: gray;
+        }
+
+        .right-bottom {
+            height: 90%;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .dashed {
+            width: 90%;
+            height: 90%;
+            background-image: repeating-linear-gradient(135deg, white 0px, white 10px, rgb(232, 232, 232) 10px, gray 11px);
+            /* background: repeating-linear-gradient(135deg, white , rgb(203, 203, 203) 1%); */
+            border: 2px dashed gray;
+            border-radius: 15px;
+        }
+
+        .dash {
+            background-color: rgb(240, 240, 240);
+            color: blue;
+        }
+
+        .dash i {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main flex">
+            <div class="left flex">
+                <div class="left-top padding">
+                    <div class="logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/BMW_logo_%28gray%29.svg/2048px-BMW_logo_%28gray%29.svg.png"
+                            alt="">
+                    </div>
+
+                    <div class="dashboard flex">
+                        <div class="different-nav dash">
+                            <i class="fa-solid fa-house"></i>
+                            <b> Dashboard</b>
+                        </div>
+
+                        <div class="different-nav">
+                            <i class="fa-brands fa-teamspeak"></i>
+                            <b>Team</b>
+                        </div>
+
+                        <div class="different-nav">
+                            <i class="fa-solid fa-inbox"></i>
+                            <b>Projects</b>
+                        </div>
+
+                        <div class="different-nav">
+                            <i class="fa-solid fa-calendar-days"></i>
+                            <b>Calender</b>
+                        </div>
+
+                        <div class="different-nav">
+                            <i class="fa-solid fa-file"></i>
+                            <b>Document</b>
+                        </div>
+
+                        <div class="different-nav">
+                            <i class="fa-regular fa-circle"></i>
+                            <b>Reports</b>
+                        </div>
+                    </div>
+
+                    <div class="your-teams flex">
+                        <h3>Your Teams</h3>
+                        <div class="diffe-teams">
+                            <p>H</p>
+                            <b>Heroicons</b>
+                        </div>
+
+                        <div class="diffe-teams">
+                            <p>T</p>
+                            <b>Tailwind Labs</b>
+                        </div>
+
+                        <div class="diffe-teams">
+                            <p>W</p>
+                            <b>Workcation</b>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="left-bottom padding">
+                    <i class="fa-solid fa-gear"></i>
+                    <b>Settings</b>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right-top flex">
+                    <div class="search flex">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search..">
+                    </div>
+                    <div class="photo flex">
+                        <i class="fa-regular fa-bell"></i>
+                        <div class="liner"></div>
+                        <img src="https://thumbs.dreamstime.com/b/unknown-male-avatar-profile-image-businessman-vector-unknown-male-avatar-profile-image-businessman-vector-profile-179373829.jpg"
+                            alt="">
+                        <h2>Tom Cook <select></select></h2>
+                    </div>
+                </div>
+                <div class="right-bottom flex">
+                    <div class="dashed">
+                        <div class="border-dashed"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

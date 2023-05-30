@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Task 2</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        body {
+            background-color: white;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .w-95 {
+            width: 95%;
+            margin-inline: auto;
+        }
+
+        .today {
+            width: 100%;
+            background-color: rgb(235, 235, 235);
+            padding-block: .9rem;
+            border-bottom: 1px solid gray;
+        }
+
+        section {
+            width: 100%;
+        }
+
+        .stock {
+            padding-block: 1.7rem;
+            border-bottom: 1px solid rgb(172, 172, 172);
+            padding-inline: 2.5%;
+        }
+
+        .left-stock i {
+            height: 15px;
+            background-color: gray;
+            color: white;
+            padding: 2px 4px;
+            border-radius: 50%;
+            font-size: .8rem;
+        }
+
+        .left-stock {
+            width: 55%;
+            align-items: flex-start;
+            gap: 2rem;
+        }
+
+        .right-stock {
+            width: 50%;
+            justify-content: space-between;
+        }
+
+        .view {
+            color: blue;
+            font-size: 1.2rem;
+        }
+
+        .opacity {
+            padding-top: .5rem;
+            opacity: .8;
+        }
+
+        .paid {
+            color: green;
+            background-color: rgb(230, 255, 230);
+            border: 1px solid green;
+            padding: 2px 10px;
+            border-radius: 5px;
+        }
+
+        .withdraw {
+            color: black;
+            background-color: rgb(236, 236, 236);
+            border: 1px solid gray;
+            padding: 2px 10px;
+            border-radius: 5px;
+        }
+
+        .overdue {
+            color: rgb(161, 0, 0);
+            background-color: rgb(255, 213, 213);
+            border: 1px solid rgb(255, 112, 112);
+            padding: 2px 10px;
+            border-radius: 5px;
+        }
+
+        .left-stock .none {
+            background-color: transparent;
+            color: gray;
+            font-size: 1.1rem;
+        }
+
+
+        .recent{
+            justify-content: space-between;
+            padding-top: 6.1rem;
+            padding-bottom: 2rem;
+        }
+
+        .recent button{
+            background-color: transparent;
+            border: none;
+            color: blue;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .box{
+            width: 32%;
+            border: 1px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .top-box{
+            padding: 2rem 2rem;
+            background-color: rgb(221, 221, 221);
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-box img{
+            width: 55px;
+            border: 1px solid black;
+            border-radius: 10px;
+        }
+
+        .bottom-box{
+            padding: 2rem;
+            gap: 1.5rem;
+            flex-direction: column;
+        }
+
+        .opa{
+            opacity: .8;
+        }
+
+        .first{
+            justify-content: space-between;
+        }
+
+        .main{
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="today">
+        <div class="w-95">
+            <h3>Today</h3>
+        </div>
+    </div>
+
+    <section>
+        <div class="stock flex ">
+            <div class="left-stock flex w-95">
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+                <div class="usd">
+                    <p>$7,600.00 USD</p>
+                    <p class="opacity">$500.00 tax</p>
+                </div>
+                <p class="paid">Paid</p>
+            </div>
+            <div class="right-stock flex">
+                <div>
+                    <p>Reform</p>
+                    <p class="opacity">Website redesign</p>
+                </div>
+                <div style="text-align: right;">
+                    <p class="view">View transaction</p>
+                    <p class="opacity">Invoice #00012</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock flex ">
+            <div class="left-stock flex w-95">
+                <i class="fa-sharp fa-solid fa-arrow-up fa-rotate-180"></i>
+                <div class="usd">
+                    <p>$10,000.00 USD</p>
+                </div>
+                <p class="withdraw">Withdraw</p>
+            </div>
+            <div class="right-stock flex">
+                <div>
+                    <p>Tom Cook</p>
+                    <p class="opacity">Salary</p>
+                </div>
+                <div style="text-align: right;">
+                    <p class="view">View transaction</p>
+                    <p class="opacity">Invoice #00011</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="stock flex ">
+            <div class="left-stock flex w-95">
+                <i class="fa-solid none fa-arrows-rotate"></i>
+                <div class="usd">
+                    <p>$2,000.00 USD</p>
+                    <p class="opacity">$130.00 tax</p>
+                </div>
+                <p class="overdue">Overdue</p>
+            </div>
+            <div class="right-stock flex">
+                <div>
+                    <p>Tuple</p>
+                    <p class="opacity">Logo Design</p>
+                </div>
+                <div style="text-align: right;">
+                    <p class="view">View transaction</p>
+                    <p class="opacity">Invoice #00009</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="today">
+        <div class="w-95">
+            <h3>Yesterday</h3>
+        </div>
+    </div>
+
+    <section>
+        <div class="stock flex ">
+            <div class="left-stock flex w-95">
+                <i class="fa-sharp fa-solid fa-arrow-up"></i>
+                <div class="usd">
+                    <p>$14,000.00 USD</p>
+                    <p class="opacity">$900.00 tax</p>
+                </div>
+                <p class="paid">Paid</p>
+            </div>
+            <div class="right-stock flex">
+                <div>
+                    <p>SavvyCal</p>
+                    <p class="opacity">Website redesign</p>
+                </div>
+                <div style="text-align: right;">
+                    <p class="view">View transaction</p>
+                    <p class="opacity">Invoice #00010</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <div class="recent w-95 flex">
+            <h3>Recent Client</h3>
+            <button>View all</button>
+        </div>
+
+        <div class="main w-95 flex">
+            <div class="box">
+                <div class="top-box flex">
+                    <div style="align-items: center;gap: 1rem;" class="flex">
+                        <img src="Tuple.jpg" alt="">
+                        <p>Tuple</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-rotate-90"></i>
+                </div>
+                <div class="bottom-box flex">
+                    <div class="first flex">
+                        <p class="opa">Last invoice</p>
+                        <p class="opa">December 13 , 2022</p>
+                    </div>
+                    <div style="text-align: right;" class="first flex">
+                        <p class="opa">Amount</p>
+                        <p>$2,000.00
+                        <button class="overdue">Overdue</button></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="box">
+                <div class="top-box flex">
+                    <div style="align-items: center;gap: 1rem;" class="flex">
+                        <img src="s.png" alt="">
+                        <p>SavvyCal</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-rotate-90"></i>
+                </div>
+                <div class="bottom-box flex">
+                    <div class="first flex">
+                        <p class="opa">Last invoice</p>
+                        <p class="opa">January 22 , 2023</p>
+                    </div>
+                    <div style="text-align: right;" class="first flex">
+                        <p class="opa">Amount</p>
+                        <p>$14,000.00
+                        <button class="paid">Paid</button></p>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="top-box flex">
+                    <div style="align-items: center;gap: 1rem;" class="flex">
+                        <img src="re.jpg" alt="">
+                        <p>Tuple</p>
+                    </div>
+                    <i class="fa-solid fa-ellipsis-vertical fa-rotate-90"></i>
+                </div>
+                <div class="bottom-box flex">
+                    <div class="first flex">
+                        <p class="opa">Last invoice</p>
+                        <p class="opa">January 23 , 2023</p>
+                    </div>
+                    <div style="text-align: right;" class="first flex">
+                        <p class="opa">Amount</p>
+                        <p>$7,600.00
+                        <button class="paid">Paid</button></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
