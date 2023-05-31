@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Keka/style.css">
+    <link rel="shortcut icon" href="/Keka/keka.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Keka ka Dokha</title>
+</head>
+
+<body>
+    <div class="nm">
+        <div class="navbar flex">
+            <div class="logo">
+                <img src="/Keka/logo.png" alt="">
+            </div>
+
+            <div class="name">
+                <p>Saeculum</p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search employee or actions (Ex: Apply Leave , Attendance Approvals)">
+            </div>
+
+            <div class="profile flex">
+                <button>Bhaumik Panchal <select></select> </button>
+                <p>BP</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="flex">
+        <div class="left">
+            <a class="home" href="/Keka/Home/Home.html">
+                <i class="fa fa-home"></i>
+                <p>Home</p>
+            </a>
+            <a class="home active" href="/Keka/Me/Attendance Log.html">
+                <i class="fa-solid fa-user"></i>
+                <p>Me</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-solid fa-inbox"></i>
+                <p>Inbox</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-brands fa-teamspeak"></i>
+                <p>My Teams</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <p>My Finances</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-solid fa-building-ngo"></i>
+                <p>Org</p>
+            </a>
+        </div>
+
+
+        <div class="right">
+            <nav>
+                <ul class="flex">
+                    <a href="Leave.html"><li>LEAVE</li></a>
+                    <a  href="Attendance Log.html">
+                    <li class="active-nav">ATTENDANSE</li></a>
+                    <a href="Performance.html"><li>PERFORMANCE</li></a>
+                    <a href="Expensis and Travel.html"><li>EXPENSES & TRAVEL</li></a>
+                    <a href="Apps.html"><li>APPS</li></a>
+                </ul>
+            </nav>
+
+            <div class="status flex">
+                <div class="boxes">
+                    <p class="para">Attendance Stats</p>
+                    <div class="box">
+                        <div class="last-week flex">
+                            <button>Last Week <select></select></button>
+                            <i class="fa-solid fa-circle-info"></i>
+                        </div>
+                        <div class="me flex">
+                            <div class="flex me-flex">
+                                <i class="fa-solid fa-user"></i>
+                                <p style="padding: 12px;">Me</p>
+                            </div>
+                            <div class="avg-hours">
+                                <p>AVG HRS / DAY </p>
+                                <h2>7h 58m</h2>
+                            </div>
+                            <div class="avg-hours">
+                                <p> ON TIME ARRIVAL</p>
+                                <h2>33%</h2>
+                            </div>
+                        </div>
+                        <div class="line"></div>
+                        <div class="me flex">
+                            <div class="flex me-flex">
+                                <i class="blue fa-solid fa-user"></i>
+                                <p style="padding: 12px;">My Teams</p>
+                            </div>
+                            <div class="avg-hours">
+                                <p class="none">AVG HRS / DAY </p>
+                                <h2 class="top-padding">7h 20m</h2>
+                            </div>
+                            <div class="avg-hours">
+                                <p class="none"> ON TIME ARRIVAL</p>
+                                <h2 class="top-padding">27%</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="boxes">
+                    <p class="para">Timmings</p>
+                    <div class="box timing-box flex">
+                        <div class="top-timings flex">
+                            <div class="top-left flex">
+                                <p>M</p>
+                                <p class="T">T</p>
+                                <p>W</p>
+                                <p>T</p>
+                                <p>F</p>
+                                <p class="S">S</p>
+                                <p class="S">S</p>
+                            </div>
+                            <div class="top-right flex">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <i class="fa-solid fa-fingerprint"></i>
+                            </div>
+                        </div>
+
+                        <div class="bottom-timings flex">
+                            <p>Today (10:00 AM - 7:00 PM)</p>
+                            <div class="line-blue"></div>
+                            <div class="duration flex">
+                                <p>Duration: 9h 0m</p>
+                                <p>Break: 0 Min</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div style="padding-right: 20px;" class="boxes">
+                    <p class="para">Actions</p>
+                    <div class="box action flex">
+                        <div class="left-action">
+                            <button id="clock">8:10:45</button>
+                            <p style="font-size: .8rem;padding-top: 5px;">Mon 29, May 2023</p>
+                        </div>
+                        <div class="right-action flex">
+                            <p>Forgot ID Card</p>
+                            <p>Work From Home</p>
+                            <p>Partial Day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="log-req flex">
+                <div class="top-log flex">
+                    <p>Logs & Requests</p>
+                    <div class="hours flex">
+                        <div class="on-off">
+                            <div class="on"></div>
+                        </div>
+                        <p>24 hour format</p>
+                    </div>
+                </div>
+
+                <div class="bottom-log">
+                    <ul class="flex atte">
+                        <a href="Attendance Log.html">
+                            <li> Attendance Log</li>
+                        </a>
+                        <a href="Shift Schedule.html">
+                            <li>Shift Schedule</li>
+                        </a>
+                        <a href="Attendance Requests.html">
+                            <li class="active-li"> Attendance Requests</li>
+                        </a>
+                        <a href="Shift Weekly Off Requests.html">
+                            <li> Shift Weekly Off Requests</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="p-20">
+                <div class="shift-req border">
+                    <div class="top-shift-req flex">
+                        <p>Work From Home / On Duty Requests</p>
+                        <div class="right-top-shift-req flex">
+                            <p>05/01/2023 - 06/14/2023</p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="p-20 p-b-20">
+                        <div class="no-shift">
+                            <p>No Work From Home / On Duty Requests Available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="p-20 p-b-20">
+                <div class="shift-req border">
+                    <div class="top-shift-req flex">
+                        <p>Regularization Requests</p>
+                        <div class="right-top-shift-req flex">
+                            <p>05/01/2023 - 06/14/2023</p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <table class="week-table" border="1px solid">
+                        <tr style="background-color: #F3F4F7;">
+                            <td>DATE</td>
+                            <td>REQUEST TY..</td>
+                            <td>REQUESTED ON</td>
+                            <td>NOTE</td>
+                            <td>STATUS</td>
+                            <td>LAST ACTION BY</td>
+                            <td>NEXT APPROVER</td>
+                            <td>ACTIONS</td>
+                        </tr>
+                        <tr>
+                            <td>May 09 , 2023</td>
+                            <td>Attendance</td>
+                            <td>30 May 2023</td>
+                            <td>regularized</td>
+                            <td>Approved</td>
+                            <td>Aarti Lulla <br> <small>on 30 May , 2023</small> </td>
+                            <td></td>
+                            <td>
+                                <i style="color: gray;font-size: 1.1rem;padding: 10px;"
+                                    class="fa-solid fa-message"></i>&nbsp;&nbsp;&nbsp;
+                                <i style="color: gray;font-size: 1.1rem;padding: 10px;"
+                                    class="fa-solid fa-ellipsis-vertical fa-rotate-90"></i>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="one-one flex">
+                        <p>1 to 1 of 1</p>
+                        <i class="fa-solid fa-backward-step opa"></i>
+                        <i class="fa-solid fa-angle-left"></i>
+                        <p>Page 1 of 1</p>
+                        <i class="fa-solid fa-angle-right"></i>
+                        <i class="fa-solid fa-backward-step fa-rotate-180 opa"></i>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-20 p-b-20">
+                <div class="shift-req border">
+                    <div class="top-shift-req flex">
+                        <p>Work From Home / On Duty Requests</p>
+                        <div class="right-top-shift-req flex">
+                            <p>05/01/2023 - 06/14/2023</p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="p-20 p-b-20">
+                        <div class="no-shift">
+                            <p>No Work From Home / On Duty Requests Available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="p-20 p-b-20">
+                <div class="shift-req border">
+                    <div class="top-shift-req flex">
+                        <p>Work From Home / On Duty Requests</p>
+                        <div class="right-top-shift-req flex">
+                            <p>05/01/2023 - 06/14/2023</p>
+                            <i class="fa-solid fa-ellipsis-vertical"></i>
+                        </div>
+                    </div>
+                    <div class="p-20 p-b-20">
+                        <div class="no-shift">
+                            <p>No Work From Home / On Duty Requests Available.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+
+
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+        showTime();
+    </script>
+</body>
+
+</html>

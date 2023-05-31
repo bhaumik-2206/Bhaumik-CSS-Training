@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="keka.png" type="image/x-icon">
+    <link rel="stylesheet" href="/Keka/style.css">
+    <link rel="shortcut icon" href="/Keka/keka.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Keka ka Dokha</title>
@@ -16,7 +16,7 @@
     <div class="nm">
         <div class="navbar flex">
             <div class="logo">
-                <img src="logo.png" alt="">
+                <img src="/Keka/logo.png" alt="">
             </div>
 
             <div class="name">
@@ -36,46 +36,46 @@
 
     <section class="flex">
         <div class="left">
-            <div class="home">
+            <a class="home" href="/Keka/Home/Home.html">
                 <i class="fa fa-home"></i>
                 <p>Home</p>
-            </div>
-
-            <div class="home active">
+            </a>
+            <a class="home active" href="/Keka/Me/Attendance Log.html">
                 <i class="fa-solid fa-user"></i>
                 <p>Me</p>
-            </div>
+            </a>
 
-            <div class="home">
+            <a class="home" href="">
                 <i class="fa-solid fa-inbox"></i>
                 <p>Inbox</p>
-            </div>
+            </a>
 
-            <div class="home">
+            <a class="home" href="">
                 <i class="fa-brands fa-teamspeak"></i>
                 <p>My Teams</p>
-            </div>
+            </a>
 
-            <div class="home">
+            <a class="home" href="">
                 <i class="fa-solid fa-indian-rupee-sign"></i>
                 <p>My Finances</p>
-            </div>
+            </a>
 
-            <div class="home">
+            <a class="home" href="">
                 <i class="fa-solid fa-building-ngo"></i>
                 <p>Org</p>
-            </div>
+            </a>
         </div>
 
 
         <div class="right">
             <nav>
                 <ul class="flex">
-                    <li><a href="#">LEAVE</a></li>
-                    <li><a style="opacity: 1;" href="#">ATTENDANSE</a></li>
-                    <li><a href="#">PERFORMANCE</a></li>
-                    <li><a href="#">EXPENSES & TRAVEL</a></li>
-                    <li><a href="#">APPS</a></li>
+                    <a href="Leave.html"><li>LEAVE</li></a>
+                    <a  href="Attendance Log.html">
+                    <li class="active-nav">ATTENDANSE</li></a>
+                    <a href="Performance.html"><li>PERFORMANCE</li></a>
+                    <a href="Expensis and Travel.html"><li>EXPENSES & TRAVEL</li></a>
+                    <a href="Apps.html"><li>APPS</li></a>
                 </ul>
             </nav>
 
@@ -155,8 +155,7 @@
                     <p class="para">Actions</p>
                     <div class="box action flex">
                         <div class="left-action">
-                            <button>12:11:44
-                                PM</button>
+                            <button id="clock">8:10:45</button>
                             <p style="font-size: .8rem;padding-top: 5px;">Mon 29, May 2023</p>
                         </div>
                         <div class="right-action flex">
@@ -181,22 +180,22 @@
 
                 <div class="bottom-log">
                     <ul class="flex atte">
-                        <li class="active-li">Attendance Log</li>
-                        <li>Shift Schedule</li>
-                        <li>Attendance Requests</li>
-                        <li>Shift Weekly Off Requests</li>
+                        <a href="Attendance Log.html"><li class="active-li"> Attendance Log</li></a>
+                        <a href="Shift Schedule.html"> <li>Shift Schedule</li></a>
+                        <a href="Attendance Requests.html"><li> Attendance Requests</li></a>
+                        <a href="Shift Weekly Off Requests.html"><li> Shift Weekly Off Requests</li></a>
                     </ul>
                 </div>
             </div>
 
-            <div class="last-30-days">
+            <div class="p-20">
                 <div class="l-30-main flex">
                     <div class="left-30-days">
                         <p>Last 30 Days</p>
                     </div>
                     <div class="days">
                         <ul class="flex day">
-                            <li  class="active-li-days">30 Days</li>
+                            <li class="active-li-days">30 Days</li>
                             <li class="hello">APR</li>
                             <li>MAR</li>
                             <li>FEB</li>
@@ -218,7 +217,7 @@
                     <p class="log-main">LOG</p>
                 </div>
             </div>
-            
+
             <div class="value">
                 <div class="atte-daily head flex">
                     <p class="date">May 30 , Tue</p>
@@ -291,7 +290,7 @@
                     <p class="log-main"><i class="fa-solid fa-check check-i"></i></p>
                 </div>
             </div>
-            
+
 
             <div class="value">
                 <div class="atte-daily exam-value head flex">
@@ -358,7 +357,8 @@
                         <abbr class="pnlty" title="Absent">PNLTY</abbr>
                     </p>
                     <p class="main-atte"> </p>
-                    <p class="effe-hour"> <span style="background-color: white;border: 1px solid #77c0fc;" class="total-hours">....</span> 0h 29m +</p>
+                    <p class="effe-hour"> <span style="background-color: white;border: 1px solid #77c0fc;"
+                            class="total-hours">....</span> 0h 29m +</p>
                     <p class="gro-hours">4h 49m +</p>
                     <p class="arrival"><i class="fa-solid fa-check"></i> &nbsp; On Time</p>
                     <p class="log-main"><i class="fa-solid fa-check check-i"></i></p>
@@ -384,6 +384,40 @@
 
         </div>
     </section>
+
+
+
+
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+        showTime();
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Keka/style.css">
+    <link rel="shortcut icon" href="/Keka/keka.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Keka ka Dokha</title>
+</head>
+
+<body>
+    <div class="nm">
+        <div class="navbar flex">
+            <div class="logo">
+                <img src="/Keka/logo.png" alt="">
+            </div>
+
+            <div class="name">
+                <p>Saeculum</p>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search employee or actions (Ex: Apply Leave , Attendance Approvals)">
+            </div>
+
+            <div class="profile flex">
+                <button>Bhaumik Panchal <select></select> </button>
+                <p>BP</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="flex">
+        <div class="left">
+            <a class="home active" href="">
+                <i class="fa fa-home"></i>
+                <p>Home</p>
+            </a>
+            <a class="home" href="/Keka/Me/Attendance Log.html">
+                <i class="fa-solid fa-user"></i>
+                <p>Me</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-solid fa-inbox"></i>
+                <p>Inbox</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-brands fa-teamspeak"></i>
+                <p>My Teams</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-solid fa-indian-rupee-sign"></i>
+                <p>My Finances</p>
+            </a>
+
+            <a class="home" href="">
+                <i class="fa-solid fa-building-ngo"></i>
+                <p>Org</p>
+            </a>
+        </div>
+
+        <div class="right flex">
+            <div class="right-left p-20">
+                <p class="access">Quick Access</p>
+
+                <div class="border inbox padding ">
+                    <p class="in-text">Inbox</p>
+                    <div class="bottom-inbox flex">
+                        <img src="https://cdn.kekastatic.net/shared/assets/images/background/inbox-blank.svg" alt="">
+                        <div class="inbox-content">
+                            <p>Good job!</p>
+                            <br>
+                            <p>You have no pending actions</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border padding festival flex">
+                    <div class="flex top-festival ">
+                        <div>Holidays</div>
+                        <button>View All</button>
+                    </div>
+                    <h2>Independance Day</h2>
+                    <p>Tue, 15 August, 2023</p>
+                </div>
+
+                <div class="border padding wo-remotely">
+                    <p class="wo">Working Remotely</p>
+                    <div class="wo-bottom flex">
+                        <div class="wo-left-bottom flex">
+                            <p>Everyone is at office!</p>
+                            <p>No one is working remotely today.</p>
+                        </div>
+                        <div class="wo-right-bottom">
+                            <img src="https://cdn.kekastatic.net/shared/assets/images/background/working-remotely-light.svg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border padding wo-remotely">
+                    <p class="wo">On Leave Today</p>
+                    <div class="wo-bottom flex padding-remove">
+                        <div class="wo-left-bottom flex">
+                            <p>Everyone is working today!</p>
+                            <p>No one is on leave today.</p>
+                        </div>
+                        <div class="wo-right-bottom tick">
+                            <img src="https://cdn.kekastatic.net/shared/assets/images/background/on-leave-today-light.svg"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border time-today flex">
+                    <div class="today-time flex">
+                        <div>Time Today - May 31, 2023 Wed</div>
+                        <button>View All</button>
+                    </div>
+                    <div class="flex currents">
+                        <div class="current-left flex">
+                            <p>CURRENT TIME</p>
+                            <div id="clock"></div>
+                        </div>
+                        <div class="current-right">
+                            <button>Forgot ID Card</button>
+                            <button>Others <select></select> </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w-dth"> </div>
+
+            <div class="right-right padding">
+                <div class="organization border">
+                    <button class="bat">Organization</button>
+                    <button class="but">Technology</button>
+                </div>
+
+                <div class="post border ">
+                    <div class="post-link flex">
+                        <a class="hmm" href="">Post</a>
+                        <a href="">Announcement</a>
+                        <a href="">Poll</a>
+                        <a href="">Praise</a>
+                    </div>
+                    <textarea placeholder="Write Your Post Here" name="" id="" cols="30" rows="5"></textarea>
+                </div>
+
+                <div class="short-data border flex">
+                    <p>Today</p>
+                    <p>0 Birthday</p>
+                    <p>0 Work Aniversary</p>
+                    <p>0 New Joines</p>
+                    <select></select>
+                </div>
+
+                <div class="create-post border flex">
+                    <img src="https://cdn.kekastatic.net/shared/assets/images/background/empty-posts-light.svg" alt="">
+                    <p>There are no posts here</p>
+                    <p>Post is a content that shares across employees</p>
+                    <button>+ Create First Post</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <script>
+        setInterval(showTime, 1000);
+        function showTime() {
+            let time = new Date();
+            let hour = time.getHours();
+            let min = time.getMinutes();
+            let sec = time.getSeconds();
+            am_pm = "AM";
+
+            if (hour > 12) {
+                hour -= 12;
+                am_pm = "PM";
+            }
+            if (hour == 0) {
+                hr = 12;
+                am_pm = "AM";
+            }
+
+            hour = hour < 10 ? "0" + hour : hour;
+            min = min < 10 ? "0" + min : min;
+            sec = sec < 10 ? "0" + sec : sec;
+
+            let currentTime = hour + ":"
+                + min + ":" + sec + am_pm;
+
+            document.getElementById("clock")
+                .innerHTML = currentTime;
+        }
+        showTime();
+    </script>
+</body>
+
+</html>
