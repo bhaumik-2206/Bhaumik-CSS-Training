@@ -35,10 +35,6 @@ button {
     padding: 20px;
 }
 
-i{
-    cursor: pointer;
-}
-
 .nm {
     position: relative;
 }
@@ -185,6 +181,7 @@ ul li {
 
 ul a li {
     opacity: .6;
+    /* transition: 1s ease;  */
 }
 
 ul a li:hover {
@@ -1054,159 +1051,4 @@ select {
 .create-post button:hover{
     background-color: #933E60;
     transition: 1s ease;
-}
-
-
-/* -----------------Leave------------------------- */
-
-.summary{
-    background-color: white;
-    box-shadow: 3px 0 6px 0 #d8dde6;
-}
-
-.summary button{
-    background-color: transparent;
-    border: none;
-    font-size: .8rem;
-    padding-block: 12px;
-    border-bottom: 2px solid #933E60;
-}
-
-.pending-leave{
-    justify-content: space-between;
-    align-items: center;
-}
-
-.pending-leave p{
-    font-size: 1.1rem;
-}
-
-.pending-leave button{
-    padding: 10px 20px;
-    border: 1px solid #933E60;
-    color: #933E60;
-    border-radius: 4px;
-    background-color:transparent;
-}
-
-.pending-leave button:hover{
-    background-color: #EDE3EA;
-    transition: 1s ease;
-}
-.apply{
-    justify-content: space-between;
-}
-
-.elephant{
-    align-items: center;
-    padding-block: 2.2rem;
-    background-color: white;
-    gap: 1rem;
-    width: 73%;
-}
-
-.elephant img{
-    width: 10%;
-}
-
-.apply-leave{
-    padding: 15px;
-    width: 20%;
-    background-color: white;
-    height: fit-content;
-    color: #933E60;
-}
-
-.apply-leave button{
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    background-color: #d66391;
-    border-radius: 5px;
-}
-
-.apply-leave button:hover{
-    background-color: #933E60;
-    transition: 1s ease;
-}
-
-.apply-leave p{
-    padding-top: 10px;
-    font-size: .8rem;
-}
-
-.Weekly-Patter{
-    justify-content: space-between;
-}
-
-.weekly-box{
-    width: 23%;
-    background-color: white;
-    position: relative;
-}
-
-.top-weekly {
-    justify-content: space-between;
-    padding: 1rem;
-    font-size: .9rem;
-    padding-bottom: 1.3rem;
-}
-
-.week-hr{
-    background-color: gray;
-    height: .2px;
-    width: 80%;
-    position: relative;
-    left: 10%;
-}
-
-.week-day-name{
-    padding-inline: 2rem;
-    justify-content: space-between;
-    font-size: .8rem;
-    align-items: flex-end;
-    padding-bottom: 2rem;
-}
-
-.week-day-name p{
-    padding-top: 5px;
-    width: 1.6rem;
-    text-align: center;
-}
-
-.month p{
-    width: 2.8rem;
-    text-align: center;
-}
-
-.Consumed-box{
-    width: 24%;
-    background-color: white;
-}
-
-.Monthly-box{
-    width: 50%;
-    background-color: white;
-}
-
-.circle{
-    align-items: center;
-    justify-content: center;
-}
-
-.circle p{
-    text-align: center;
-    border: 15px solid;
-    border-left-color: #EC8686;
-    border-right-color: gray;
-    border-top-color: gray;
-    border-bottom-color: gray;
-    border-radius: 50%;
-    padding: 20px 0px;
-    width: 30%;
-}
-
-/* --------------Performance---------------------- */
-.goals{
-    font-size: .8rem;
 }
