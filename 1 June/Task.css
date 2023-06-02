@@ -164,3 +164,53 @@ section .image{
 .grow-pro{
     flex-grow: 2;
 }
+
+@media only screen and (max-width:1000px) {
+    section .image {
+        width: 50%;
+    }
+    section .right-section {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width:750px) {
+    .section{
+        display: block;
+    }
+    section .image {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    section .right-section {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .order-no{
+        display: block;
+    }
+
+    .order-no p{
+        margin-bottom: 1rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .delivery{
+        display: block;
+    }
+
+    .delivery-address , .shipping-update{
+        text-align: center;
+        width: 100%;
+    }
+
+    .delivery-address{
+        margin-bottom: 2rem;
+    }
+}

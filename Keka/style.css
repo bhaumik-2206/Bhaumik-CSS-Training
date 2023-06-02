@@ -143,8 +143,11 @@ section .left {
     cursor: pointer;
 }
 
-nav ul .active-nav {
+nav ul  .active-nav {
     position: relative;
+}
+
+nav ul .active-nav a{
     opacity: 1;
 }
 
@@ -183,11 +186,11 @@ ul li {
     list-style-type: none;
 }
 
-ul a li {
+ul li a {
     opacity: .6;
 }
 
-ul a li:hover {
+ul li a:hover {
     opacity: 1;
 }
 
