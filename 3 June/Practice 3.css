@@ -1,0 +1,56 @@
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+a {
+    color: #47b2e4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #73c5eb;
+    text-decoration: none;
+}
+
+header {
+    background-color: #37517E;
+}
+
+.logo {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-right: auto;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.navbar a {
+    padding: 10px 20px;
+}
+
+.main-title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.third {
+    background-color: #F3F5FA;
+}
+
+.box {
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    padding: 50px 30px;
+    background: #fff;
+}
+
+.bg-blue{
+    background-color: #73c5eb;
+}
+
+.zero{
+    font-size: 4rem
+}
