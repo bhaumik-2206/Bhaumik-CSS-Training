@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        body {
+            font-family: sans-serif;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: grey;
+            font-size: 25px;
+        }
+
+        .container {
+            background-color: dodgerblue;
+            padding: 3rem 2rem;
+            color: white;
+            text-align: center;
+            border-radius: 20px;
+            box-shadow: 1px 1px 50px 1px black;
+        }
+
+        form {
+            margin-block: 2rem;
+        }
+
+        .container h1 {
+            margin-bottom: 10px;
+        }
+
+        .email {
+            text-align: left;
+            position: relative;
+        }
+
+        input {
+            padding-block: 30px 10px;
+            margin-bottom: 10px;
+            display: block;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            color: white;
+            font-size: 20px;
+            border-bottom: 2px solid white;
+        }
+
+        .label span {
+            display: inline-block;
+            position: relative;
+            bottom: 0;
+            transition: .5s ease;
+        }
+
+        .label {
+            position: absolute;
+            bottom: 0px;
+            transition: .5s ease;
+        }
+
+        /* .email:hover>label span {
+            bottom: 30px;
+            color: rgb(212, 212, 212);
+        } */
+
+        input:focus label {
+            position: relative;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .log-btn {
+            width: 100%;
+            padding: 5px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(62, 62, 62);
+            color: white;
+            font-size: 25px;
+            margin-block: 1rem .5rem;
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        input:focus + label span {
+            bottom: 30px;
+            color: rgb(212, 212, 212);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Login Page</h1>
+
+        <form action="">
+            <div class="email">
+                <input type="email" required>
+                <label class="label" for="Email">
+                    <span style="transition-delay: 0ms;">E</span><span style="transition-delay: 50ms;">m</span><span
+                        style="transition-delay: 100ms;" class="three">a</span><span style="transition-delay: 150ms;"
+                        class="four">i</span><span style="transition-delay: 200ms;" class="five">l</span>
+                </label>
+            </div>
+            <div class="email">
+                <input type="password" required>
+                <label class="label" for="Password">
+                    <span style="transition-delay: 0ms;">P</span><span style="transition-delay: 50ms;">a</span><span
+                        style="transition-delay: 100ms;" class="three">s</span><span style="transition-delay: 150ms;"
+                        class="four">s</span><span style="transition-delay: 200ms;" class="five">w</span><span
+                        style="transition-delay: 250ms;" class="six">o</span><span style="transition-delay: 300ms;"
+                        class="seven">r</span><span style="transition-delay: 350ms;" class="eight">d</span>
+                </label>
+            </div>
+
+            <button class="log-btn">Login</button>
+        </form>
+
+        <p>Don't have an account? <span style="color: black;">Register</span></p>
+    </div>
+</body>
+
+</html>
