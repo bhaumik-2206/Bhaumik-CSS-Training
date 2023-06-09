@@ -1,0 +1,64 @@
+header{
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(hero-bg.jpg) top left no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: red;
+}
+
+a:hover{
+    color: #CDA45E !important;
+}
+
+.khakhi{
+    color: #CDA45E;
+}
+
+.change-image{
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(about-bg.jpg) top left no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.menu li:hover{
+    color: #CDA45E;
+    cursor: pointer;
+}
+
+.dots::before{
+    content: "...............................................................................................................................................";
+    color: white;
+    position: absolute;
+    top: -5%;
+    right: 0;
+    z-index: 1;
+}
+
+.specials{
+    border-color: #CDA45E !important;
+}
+
+.specials li:hover{
+    background-color: #CDA45E;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.second-parallax{
+    background:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)) , url('events-bg.jpg') center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+textarea{
+    resize: none;
+}
