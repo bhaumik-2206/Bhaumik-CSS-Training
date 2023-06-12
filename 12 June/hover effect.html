@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <style>
+        img {
+            width: 100%;
+        }
+
+        .hover {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            padding: 20px;
+        }
+
+        .social {
+            width: 100%;
+            bottom: -5%;
+            opacity: 0;
+            text-align: center;
+            transition: .5s ease;
+        }
+
+        .name:hover .social {
+            opacity: 1;
+            bottom: 2%;
+        }
+
+        h1 {
+            top: 0;
+            font-size: 50px;
+            padding-top: 30px;
+            transition: .5s ease;
+            opacity: 0;
+        }
+
+        h5 {
+            top: 8%;
+            font-size: 25px;
+            transition: .5s ease;
+            opacity: 0;
+        }
+
+        .p {
+            top: 40%;
+        }
+
+        p {
+            font-size: 30px;
+            opacity: 0;
+            transition: .5s ease;
+        }
+
+        .name:hover p {
+            opacity: 1;
+        }
+
+        .name:hover h1 {
+            top: 10%;
+            opacity: 1;
+        }
+
+        .name:hover h5 {
+            top: 26%;
+            opacity: 1;
+        }
+
+        .col-lg-6 {
+            transition: 1s ease;
+        }
+
+        .name:hover .hover {
+            background-color: rgba(0, 128, 0, 0.5);
+        }
+
+        .hover {
+            transition: 1s ease;
+        }
+
+
+
+
+        .social-1 {
+            bottom: -15%;
+            left: 20%;
+            transition: .5s ease;
+            opacity: 0;
+        }
+
+        .img-3:hover .social-1 {
+            bottom: 50%;
+            opacity: 1;
+        }
+
+        .chef-name {
+            bottom: -21%;
+            transition: .5s ease;
+        }
+
+        .img-3:hover .chef-name {
+            bottom: 0%;
+        }
+
+        .social-2 {
+            top: -10%;
+            left: 20%;
+            transition: .5s ease;
+            opacity: 0;
+        }
+
+        .img-3:hover .social-2 {
+            top: 50%;
+            opacity: 1;
+        }
+
+        .img-3:hover>img {
+            opacity: .7;
+        }
+
+        .chef-name-2 {
+            top: -25%;
+            transition: .5s ease;
+        }
+
+        .img-3:hover .chef-name-2 {
+            top: 0%;
+        }
+
+        .social-3 {
+            position: absolute;
+            bottom: 85%;
+            left: 5%;
+            opacity: 0;
+            transition: all .5 ease;
+        }
+
+        .parent:hover .social-3 {
+            animation: vansh 2s;
+            opacity: 1;
+        }
+
+        @keyframes vansh {
+            0% {
+                bottom: -10%;
+                left: 0;
+            }
+
+            50% {
+                left: 40%;
+                bottom: 50%;
+            }
+
+            100% {
+                bottom: 85%;
+                left: 5%;
+            }
+        }
+
+        .chef-name-3 {
+            position: absolute;
+            bottom: 0%;
+            left: 0%;
+            opacity: 0;
+            transition: all .5 ease;
+        }
+
+        .parent:hover .chef-name-3 {
+            animation: sachin 2s;
+            opacity: 1;
+        }
+
+        @keyframes sachin {
+            0% {
+                bottom: 100%;
+                left: 100%;
+            }
+
+            50% {
+                left: -50%;
+                bottom: 50%;
+            }
+
+            100% {
+                bottom: 0%;
+                left: 0%;
+            }
+        }
+
+        .social-4 {
+            right: -20%;
+            top: 20%;
+            transition: .5s ease;
+        }
+
+        .zoom:hover img {
+            transform: scale(1.2);
+            transition: all .5 ease;
+        }
+
+        .zoom:hover .social-4 {
+            right: 0;
+            transition-delay: .3s;
+        }
+
+        .zoom-image img {
+            transition: .5s ease;
+        }
+    </style>
+</head>
+
+<body class="p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="name position-relative overflow-hidden">
+                    <img src="chefs-3.jpg" alt="" class="img-fluid">
+                    <div class="hover">
+                        <h1 class="position-absolute">Margaret Sotillo Escala</h1>
+                        <h5 class="position-absolute">Sed porttitor lectus nibh, Cras ultricies ligula sed magna dictum
+                            porta two.</h5>
+                        <div class="position-absolute p">
+                            <p><b> Phone:</b> +54 356 945234</p>
+                            <p><b>Email:</b> agents@example.com</p>
+                        </div>
+                        <div class="social position-absolute">
+                            <a href="#"><i style="cursor: pointer;"
+                                    class="text-black p-2 fa-brands fs-3 fa-twitter"></i></a>
+                            <a href="#"><i style="cursor: pointer;"
+                                    class="text-black p-2 fa-brands fs-3 fa-facebook"></i></a>
+                            <a href="#"><i style="cursor: pointer;"
+                                    class="text-black p-2 fa-brands fs-3 fa-instagram"></i></a>
+                            <a href="#"><i style="cursor: pointer;"
+                                    class="text-black p-2 fa-brands fs-3 fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="img-3 overflow-hidden position-relative m-0">
+                            <img src="chefs-3.jpg" alt="" class="img-fluid ">
+                            <div class="chef-name w-100 position-absolute  bg-primary p-2 text-center">
+                                <h2 class="text-white">Chef. Mehta</h2>
+                            </div>
+                            <div class="social-1 position-absolute">
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-twitter"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-facebook"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-instagram"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="img-3 overflow-hidden position-relative  mb-3">
+                            <img src="chefs-3.jpg" alt="" class="img-fluid">
+                            <div class="chef-name-2 w-100 position-absolute  bg-primary p-2 text-center">
+                                <h2 class="text-white">Chef. Mehta</h2>
+                            </div>
+                            <div class="social-2 position-absolute">
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-twitter"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-facebook"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-instagram"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 parent">
+                        <div class="overflow-hidden position-relative mb-3">
+                            <div class="img-3">
+                                <img src="chefs-3.jpg" alt="" class="img-fluid">
+                            </div>
+                            <div class="chef-name-3 w-100 position-absolute  bg-primary p-2 text-center">
+                                <h2 class="text-white">Chef. Mehta</h2>
+                            </div>
+                            <div class="social-3 position-absolute">
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-twitter"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-facebook"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-instagram"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-black p-2 fa-brands fs-3 fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="zoom overflow-hidden position-relative">
+                            <div class="zoom-image img-3">
+                                <img src="chefs-3.jpg" alt="" class="img-fluid mb-3">
+                            </div>
+                            <div class="social-4 bg-secondary rounded text-white d-flex position-absolute flex-column">
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-white  p-2 fa-brands fs-3 fa-twitter"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-white  p-2 fa-brands fs-3 fa-facebook"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-white  p-2 fa-brands fs-3 fa-instagram"></i></a>
+                                <a href="#"><i style="cursor: pointer;"
+                                        class="text-white  p-2 fa-brands fs-3 fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
