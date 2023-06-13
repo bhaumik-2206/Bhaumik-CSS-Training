@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Hover</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <style>
+        .button-1 {
+            padding: 5px 15px;
+            transition: .5s ease;
+        }
+
+        .button-1:hover {
+            color: white;
+        }
+
+        .button-1::before {
+            content: "";
+            width: 0%;
+            height: 0%;
+            top: 50%;
+            left: 50%;
+            right: 50%;
+            bottom: 50%;
+            background-color: rgb(48, 48, 48);
+            position: absolute;
+            transition: all .3s linear;
+            z-index: -1;
+        }
+
+        .button-1:hover::before {
+            width: 100%;
+            height: 100%;
+            top: 0%;
+            left: 0%;
+        }
+
+        span {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition: all .3s linear;
+        }
+
+        .line-1 {
+            border-top: 3px solid black;
+            top: -30%;
+            left: 0%;
+            opacity: 0;
+        }
+
+        .line-2 {
+            border-bottom: 3px solid black;
+            left: 0%;
+            bottom: -30%;
+            opacity: 0;
+        }
+
+        .button-1:hover>.line-1 {
+            opacity: 1;
+            top: 0;
+        }
+
+        .button-1:hover>.line-2 {
+            opacity: 1;
+            bottom: 0;
+        }
+
+        .common {
+            width: fit-content;
+            padding: 20px 30px;
+            cursor: pointer;
+        }
+
+        .common::after {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: -2;
+            transition: .5s ease;
+        }
+
+        .common::after {
+            background-color: slateblue;
+        }
+
+        .common:hover::after {
+            top: 0;
+        }
+
+        .common>i {
+            transition: all .5s ease;
+        }
+
+        .common:hover>i {
+            transform: rotateY(360deg);
+            color: white;
+        }
+
+        .instagram::after {
+            background-image: linear-gradient(135deg, purple, rgb(245, 73, 102), red 20%, yellow);
+        }
+
+        .main::before {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background-color: black;
+            left: -75%;
+            border-radius: 40px;
+            z-index: 2;
+            transition: all .5s ease;
+        }
+
+        .main:hover::before {
+            left: 0;
+        }
+
+        .main button {
+            padding-left: 3rem;
+            transition: all .5s ease;
+        }
+
+        .main:hover button {
+            color: white;
+        }
+
+        .rotate::after {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 2px solid gray;
+            background-color: rgba(138, 138, 138, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all .5s ease;
+        }
+
+        .rotate::before {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 2px solid gray;
+            background-color: rgba(138, 138, 138, 0.5);
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all .5s ease;
+        }
+
+        .rotate:hover::after {
+            transform: rotate(45deg);
+            background: transparent;
+        }
+
+        .rotate:hover::before {
+            transform: rotate(-45deg);
+            background: transparent;
+        }
+
+        .rotate-re::after {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 2px solid gray;
+            background: transparent;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all .5s ease;
+            transform: rotate(45deg);
+        }
+
+        .rotate-re::before {
+            content: " ";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border: 2px solid gray;
+            background: transparent;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            transition: all .5s ease;
+            transform: rotate(-45deg);
+        }
+
+        .rotate-re:hover::after {
+            transform: rotate(0);
+            background-color: rgba(138, 138, 138, 0.5);
+        }
+
+        .rotate-re:hover::before {
+            transform: rotate(0);
+            background-color: rgba(138, 138, 138, 0.5);
+        }
+
+        .img-1 {
+            transition: all .5s ease;
+        }
+
+        .img-1:hover {
+            background: linear-gradient(135deg, rgba(255, 0, 0, 0.5), rgba(255, 255, 0, 0.5));
+            transition: all .5s ease;
+        }
+
+        .img-1-name {
+            top: 40%;
+            left: 35%;
+            transition: all .5s ease;
+        }
+
+        .img-1:hover .img-1-name {
+            top: 30%;
+            left: 35%;
+        }
+
+        .img-1::after {
+            content: " ";
+            width: 0;
+            height: 0;
+            border: 2px solid white;
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transition: all .5s ease;
+            opacity: 0;
+        }
+
+        .img-1:hover::after {
+            width: 80%;
+            height: 80%;
+            top: 10%;
+            left: 10%;
+            opacity: 1;
+        }
+
+        .img-1::before {
+            content: "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+            background-color: transparent;
+            width: 70%;
+            position: absolute;
+            left: 15%;
+            top: 50%;
+            color: white;
+            z-index: 2;
+            font-weight: bold;
+            text-align: center;
+            opacity: 0;
+            transition: all .5s ease;
+            transform: scale(0);
+        }
+
+        .img-1:hover::before {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .img-2 img {
+            transform: scale(1.2);
+            transition: all .5s ease
+        }
+
+        .img-2:hover>img {
+            transform: scale(1);
+        }
+
+        .img-2-name {
+            top: 30%;
+            left: 35%;
+            transition: all .5s ease;
+        }
+
+        .img-2:hover .img-2-name {
+            top: 20%;
+        }
+
+        .hover-box {
+            left: 12%;
+            top: 60%;
+            opacity: 0;
+            transition: all .5s ease;
+        }
+
+        .img-2:hover .hover-box {
+            top: 50%;
+            opacity: 1;
+        }
+
+        .img-3-name {
+            top: 25%;
+            left: 35%;
+            transition: all .5s ease;
+        }
+
+        .img-3 img {
+            transform: scale(1.2);
+            transition: all .5s ease;
+        }
+
+        .img-3:hover img {
+            transform: scale(1);
+        }
+
+        .img-3:hover .img-3-name {
+            top: 30%;
+        }
+
+        .text-border {
+            top: 65%;
+            left: 13%;
+            right: 12%;
+            transition: all .5s ease;
+        }
+
+        .img-3:hover .text-border {
+            top: 60%;
+        }
+
+        .line-cancel {
+            width: 70%;
+            height: 3px;
+            background-color: white;
+            top: 50%;
+            left: 15%;
+            transition: all .3s ease;
+        }
+
+        .img-3:hover .cancel-1 {
+            transform: rotate(45deg);
+            opacity: .5;
+        }
+
+        .img-3:hover .cancel-2 {
+            transform: rotate(-45deg);
+            opacity: .5;
+        }
+
+        .img-4-name {
+            top: 10%;
+            left: 10%;
+            transition: all .5s ease;
+        }
+
+        .para-1 {
+            top: 30%;
+            left: -60%;
+            transition: all .5s ease;
+            transition-delay: 0ms;
+        }
+
+        .para-2 {
+            top: 45%;
+            left: -60%;
+            transition: all .5s ease;
+            transition-delay: 100ms;
+        }
+
+        .para-3 {
+            top: 60%;
+            left: -60%;
+            transition: all .5s ease;
+            transition-delay: 200ms;
+        }
+
+        .img-4:hover .para-1 {
+            top: 30%;
+            left: 10%;
+        }
+
+        .img-4:hover .para-2 {
+            top: 45%;
+            left: 10%;
+        }
+
+        .img-4:hover .para-3 {
+            top: 60%;
+            left: 10%;
+        }
+
+        img{
+            transition: all .5s ease;
+        }
+
+        .img-4:hover img {
+            transform: scale(1.2);
+            opacity: .6;
+        }
+
+
+
+        .img-5::after {
+            content: " ";
+            width: 0;
+            height: 0;
+            border: 2px solid white;
+            position: absolute;
+            z-index: 2;
+            left: 50%;
+            top: 50%;
+            transition: all .5s ease;
+            opacity: 0;
+            transform: rotate(45deg);
+        }
+
+        .img-5:hover::after {
+            width: 150px;
+            height: 150px;
+            top: 23%;
+            left: 30%;
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body class="bg-secondary">
+    <div class="container position-relative py-5">
+        <div class="row align-items-center">
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-5">
+                <button class="button-1 border-0 border-black bg-transparent fs-2 position-relative">
+                    SERVICES
+                    <span class="line-1 position-absolute"></span>
+                    <span class="line-2 position-absolute"></span>
+                </button>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-5">
+                <div
+                    class="bg-white overflow-hidden rounded-circle position-relative z-3 text-center common facebook  border-2 border border-white">
+                    <i class="fa-brands fa-facebook-f  position-relative fs-3"></i>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-5">
+                <div
+                    class="bg-white overflow-hidden instagram rounded-circle common position-relative z-3 text-center border-2 border border-white">
+                    <i class="fa-brands fa-instagram position-relative fs-3"></i>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-5 position-relative">
+                <div class="main overflow-hidden rounded-pill position-relative">
+                    <button class="btn position-relative z-3 py-2  fs-5">Learn More</button>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-5 position-relative p-0">
+                <div class="rotate text-center">
+                    <div class=" py-3 w-100 h-100 position-relative z-3">HOVER ME</div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-sm-6 mb-5 position-relative p-0">
+                <div class="rotate-re text-center">
+                    <div class=" py-3 w-100 h-100 position-relative z-3">HOVER ME</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="position-relative img-1">
+                    <img src="the-most-beautiful-picture-of-nature-wallpaper-preview.jpg" alt=""
+                        class="opacity-50 img-fluid position-relative">
+                    <h1 class="position-absolute img-1-name">Nature</h1>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="position-relative img-2 overflow-hidden">
+                    <img src="the-most-beautiful-picture-of-nature-wallpaper-preview.jpg" alt="" class="img-fluid">
+                    <h1 class="position-absolute img-2-name text-white">Nature</h1>
+                    <div
+                        class="position-absolute hover-box z-2 text-white border border-2 border-white p-4 w-75 text-center">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing.
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="img-3 position-relative overflow-hidden">
+                    <img src="the-most-beautiful-picture-of-nature-wallpaper-preview.jpg" alt="" class="img-fluid">
+                    <h1 class="position-absolute img-3-name text-white">Nature</h1>
+                    <div class="line-cancel cancel-1 position-absolute"></div>
+                    <div class="line-cancel cancel-2 position-absolute"></div>
+                    <p class="position-absolute text-border text-white text-center w-75">Lorem ipsum dolor sit amet
+                        consectetur adipisicing.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="img-4 position-relative overflow-hidden">
+                    <img src="the-most-beautiful-picture-of-nature-wallpaper-preview.jpg" alt="" class="img-fluid">
+                    <h1 class="position-absolute img-4-name text-white">Nature</h1>
+                    <p class="text-black bg-white px-3 py-1 mb-1 position-absolute para-1">Lorem ipsum dolor sit amet.
+                    </p>
+                    <p class="text-black bg-white px-3 py-1 mb-1 position-absolute para-2">Lorem ipsum dolor sit amet.
+                    </p>
+                    <p class="text-black bg-white px-3 py-1 mb-1 position-absolute para-3">Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="img-5 position-relative overflow-hidden">
+                    <img src="the-most-beautiful-picture-of-nature-wallpaper-preview.jpg" alt="" class="img-fluid">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
